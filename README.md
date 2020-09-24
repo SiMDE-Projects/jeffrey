@@ -1,6 +1,6 @@
 # uberbeer
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Service de click&amp;delivery associatif (et drole)
@@ -86,6 +86,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/maxime-vaillant"><img src="https://avatars2.githubusercontent.com/u/65608587?v=4" width="100px;" alt=""/><br /><sub><b>Maxime Vaillant</b></sub></a><br /><a href="#userTesting-maxime-vaillant" title="User Testing">📓</a> <a href="https://github.com/cesar-richard/uberbeer/commits?author=maxime-vaillant" title="Code">💻</a> <a href="#content-maxime-vaillant" title="Content">🖋</a> <a href="#design-maxime-vaillant" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/romanedauge"><img src="https://avatars1.githubusercontent.com/u/71846653?v=4" width="100px;" alt=""/><br /><sub><b>romanedauge</b></sub></a><br /><a href="#userTesting-romanedauge" title="User Testing">📓</a> <a href="#design-romanedauge" title="Design">🎨</a></td>
   </tr>
 </table>
 
