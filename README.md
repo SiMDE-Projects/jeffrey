@@ -1,4 +1,7 @@
 # uberbeer
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Service de click&amp;delivery associatif (et drole)
 
@@ -72,3 +75,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/maxime-vaillant"><img src="https://avatars2.githubusercontent.com/u/65608587?v=4" width="100px;" alt=""/><br /><sub><b>Maxime Vaillant</b></sub></a><br /><a href="#userTesting-maxime-vaillant" title="User Testing">📓</a> <a href="https://github.com/cesar-richard/uberbeer/commits?author=maxime-vaillant" title="Code">💻</a> <a href="#content-maxime-vaillant" title="Content">🖋</a> <a href="#design-maxime-vaillant" title="Design">🎨</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
