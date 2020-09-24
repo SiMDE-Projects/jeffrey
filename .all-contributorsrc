@@ -16,6 +16,16 @@
         "content",
         "design"
       ]
+    },
+    {
+      "login": "romanedauge",
+      "name": "romanedauge",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/71846653?v=4",
+      "profile": "https://github.com/romanedauge",
+      "contributions": [
+        "userTesting",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
