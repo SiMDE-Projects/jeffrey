@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "maxime-vaillant",
+      "name": "Maxime Vaillant",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/65608587?v=4",
+      "profile": "https://github.com/maxime-vaillant",
+      "contributions": [
+        "userTesting",
+        "code",
+        "content",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "uberbeer",
+  "projectOwner": "cesar-richard",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
