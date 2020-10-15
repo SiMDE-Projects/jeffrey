@@ -1,11 +1,11 @@
 import React from 'react';
 
-const screenTitle = ({title}) => {
-  return(
-    <div  className="header">
+import './screenTitle.css'
+
+const ScreenTitle = ({ title }) => (
+    <div  className="screen-title">
       <h1>{title}</h1>
     </div>
-  )
-}
+)
 
-export default screenTitle;
+export default ScreenTitle;
