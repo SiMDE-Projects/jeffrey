@@ -5,16 +5,17 @@ import './App.css';
 import Accueil from './pages/accueil.js';
 import Commander from './pages/commande.js';
 import Suivi from './pages/suivi.js';
-import ScreenTitle from './components/header/screenTitle.js';
 
 function App() {
   return (
     <BrowserRouter>
       <React.Suspense fallback={<div>Loading</div>}>
-					<Switch>
-						<Route path="/" exact component={Accueil}/>
-					</Switch>
-				</React.Suspense>
+          <Switch>
+              <Route path="/" exact component={Accueil}/>
+              <Route path="/commander" exact component={Commander}/>
+              <Route path="/suivre" exact component={Suivi}/>
+          </Switch>
+      </React.Suspense>
     </BrowserRouter>
   );
 }

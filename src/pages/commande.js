@@ -1,12 +1,11 @@
 import React from 'react';
 
-import ScreenTitle from '../components/header/screenTitle.js';
+import Header from '../components/header/header';
 
 function Commande() {
   return (
     <div className="App">
-      <ScreenTitle title='Commander'>
-      </ScreenTitle>
+      <Header title='Commander'/>
       <div className="App-body">
       </div>
     </div>
