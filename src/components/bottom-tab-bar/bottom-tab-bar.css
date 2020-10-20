@@ -1,0 +1,8 @@
+.Bottom {
+    height: 10vh;
+    bottom: 0;
+    background-color: #333333;
+    color: #FCFCFC;
+    font-weight: bold;
+    text-align: center;
+}
