@@ -1,13 +1,13 @@
 import React from "react";
 
 import './bottom-tab-bar.css';
-import Buy_button from '../ressources/buy_button.js'
+import buy from '../../assets/Buy.svg';
 
 const Bottom = ({ total }) => (
     <div className="Bottom">
-      <div className="Buy">
-        <Buy_button/>
-      </div>
+      <button className='Buy_button'>
+        <img className='Buy' src={buy}/>
+      </button>
     </div>
 )
 

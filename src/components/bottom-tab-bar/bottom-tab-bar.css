@@ -11,8 +11,20 @@
     position: fixed;
 }
 
-.Buy {
+.Buy_button {
     position: relative;
     top: -2.5vh;
     left: 50;
+    height: 10vh;
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vh;
+    background-color: #B3001B;
+    border: 0;
+}
+
+.Buy  {
+  height: 5.5vh;
 }
