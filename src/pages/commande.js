@@ -16,9 +16,9 @@ import Right_Content from '../components/ressources/right_content';
 const product_data = data.Product;
 
 const rootPanels = product_data.map((item,i) => i%2 === 0 ?
-    {key: {i}, title: {content:<Left_Item title={item.title}/>, icon:''}, content: {content : <Left_Content/>} }
+    {key: {i}, title: {content:<Left_Item title={item.title}/>, icon:''}, content: {content : <Left_Content produits={item.details}/>} }
     :
-    {key: {i}, title: {content:<Right_Item title={item.title}/>, icon:''}, content: {content : <Right_Content/>} }
+    {key: {i}, title: {content:<Right_Item title={item.title}/>, icon:''}, content: {content : <Right_Content produits={item.details}/>} }
   );
 
 function Commande() {

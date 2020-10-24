@@ -3,52 +3,80 @@
     {
       "id": "1",
       "title": "Snacks",
-      "details": "1"
+      "details": [
+        {
+          "id": "31",
+          "title": "Deli",
+          "prix": 1.50,
+          "img": null
+        },
+        {
+          "id": "32",
+          "title": "Deli Red",
+          "prix": 2,
+          "img": null
+        },
+        {
+          "id": "33",
+          "title": "Barbar",
+          "prix": 2.50,
+          "img": null
+        },
+        {
+          "id": "34",
+          "title": "Barbar",
+          "prix": 2.50,
+          "img": null
+        }
+      ]
     },
     {
       "id": "2",
       "title": "Soft",
-      "details": "2"
+      "details": [
+        {
+          "id": "31",
+          "title": "Deli",
+          "prix": 1.50,
+          "img": null
+        },
+        {
+          "id": "32",
+          "title": "Deli Red",
+          "prix": 2,
+          "img": null
+        },
+        {
+          "id": "33",
+          "title": "Barbar",
+          "prix": 2.50,
+          "img": null
+        }
+      ]
     },
     {
       "id": "3",
       "title": "Bières",
-      "details": "3"
-    },
-    {
-      "id": "3",
-      "title": "Bières",
-      "details": "3"
-    },
-    {
-      "id": "3",
-      "title": "Bières",
-      "details": "3"
-    },
-    {
-      "id": "3",
-      "title": "Bières",
-      "details": "3"
-    },
-    {
-      "id": "3",
-      "title": "Bières",
-      "details": "3"
-    },
-    {
-      "id": "3",
-      "title": "Bières",
-      "details": "3"
-    },
-    {
-      "id": "3",
-      "title": "Bières",
-      "details": "3"
-    },
-    {
-      "id": "3",
-      "title": "Bières",
-      "details": "3"
+      "details": [
+        {
+          "id": "31",
+          "title": "Deli",
+          "prix": 1.50,
+          "img": null
+        },
+        {
+          "id": "32",
+          "title": "Deli Red",
+          "prix": 2,
+          "img": null
+        },
+        {
+          "id": "33",
+          "title": "Barbar",
+          "prix": 2.50,
+          "img": null
+        }
+      ]
     }
   ]
 }

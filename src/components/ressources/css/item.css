@@ -7,9 +7,12 @@
   justify-content: center;
   align-items: center;
   margin-top: -1vh;
-  font-size: calc(12px + 2vmin);
-  font-weight: bold;
   color: #FCFCFC;
+}
+
+.Right_item h1, .Left_item h1{
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .Right_content, .Left_content{
@@ -17,6 +20,7 @@
   height: 15vh;
   width: 80vw;
   display: flex;
+  flex-direction: row;
   border-radius: 1vh;
   justify-content: center;
   background-color: #5E5E5E;
@@ -40,4 +44,12 @@
 .Left_item{
   background-color: #333333;
   left: 5%;
+}
+
+.Produit{
+  background-color: white;
+  border-radius: 100vh;
+  height: 10vh;
+  width: 10vh;
+  margin: 2vh;
 }
