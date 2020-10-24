@@ -17,14 +17,13 @@
 
 .Right_content, .Left_content{
   position: relative;
-  height: 15vh;
   width: 80vw;
   display: flex;
   flex-direction: row;
   border-radius: 1vh;
   justify-content: center;
   background-color: #5E5E5E;
-  align-items: center;
+  align-items: flex-start;
   margin-top: -3.5vh;
 }
 
@@ -52,4 +51,19 @@
   height: 10vh;
   width: 10vh;
   margin: 2vh;
+}
+
+.Product_list_Left{
+  display: flex;
+  flex-direction: column;
+}
+
+.Product_list_Midle{
+  display: flex;
+  flex-direction: column;
+}
+
+.Product_list_Right{
+  display: flex;
+  flex-direction: column;
 }

@@ -5,7 +5,15 @@ import './css/item.css';
 
 const Left_Content = ({produits}) => (
   <div className='Left_content'>
-  {produits.map((item,i) => <Produit/>)}
+    <div className='Product_list_Left'>
+    {produits.map((item,i) => i % 3 == 0 ? <Produit/> : <div></div>)}
+    </div>
+    <div className='Product_list_Middle'>
+    {produits.map((item,i) => i % 3 == 1 ? <Produit/> : <div></div>)}
+    </div>
+    <div className='Product_list_Right'>
+    {produits.map((item,i) => i % 3 == 2 ? <Produit/> : <div></div>)}
+    </div>
   </div>
 )
 
