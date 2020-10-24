@@ -9,12 +9,12 @@
     display: flex;
     width: 100%;
     position: fixed;
+    z-index: 3;
 }
 
 .Buy_button {
     position: relative;
     top: -2.5vh;
-    left: 50;
     height: 10vh;
     width: 10vh;
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
     border-radius: 5vh;
     background-color: #B3001B;
-    border: 0;
+    border-color: #333333;
 }
 
 .Buy  {

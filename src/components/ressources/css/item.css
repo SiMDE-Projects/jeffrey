@@ -1,0 +1,17 @@
+.Right_item, .Left_item{
+  position: relative;
+  height: 10vh;
+  width: 80vw;
+  margin: 1vh;
+  border-radius: 1vh;
+}
+
+.Right_item{
+  background-color: #B3001B;
+  left: 12.5%;
+}
+
+.Left_item{
+  background-color: #333333;
+  left: 2.5%;
+}

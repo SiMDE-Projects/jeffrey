@@ -1,6 +1,14 @@
 .Main_container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .Body_container{
-    height: auto;
+  display: flex;
+  padding-top: 2vh;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }

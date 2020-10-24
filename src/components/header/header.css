@@ -1,12 +1,24 @@
 .header {
-  background-color: #B3001B;
-  height: 10vh;
-  display: flex;
   position: fixed;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 90%;
+  height: 8vh;
+  background-color: #B3001B;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
   font-size: calc(10px + 2vmin);
   color: #FCFCFC;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header_container{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  z-index: 3
 }
