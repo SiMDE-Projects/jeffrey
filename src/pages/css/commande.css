@@ -6,9 +6,9 @@
 
 .Body_container{
   display: flex;
-  padding-top: 2vh;
   flex-direction: column;
   position: relative;
   margin-top: 10vh;
+  padding-top: 1vh;
   margin-bottom: 10vh;
 }

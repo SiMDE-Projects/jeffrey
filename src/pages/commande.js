@@ -10,18 +10,16 @@ import Header from '../components/header/header';
 import Bottom from '../components/bottom-tab-bar/bottom-tab-bar';
 import Left_Item from '../components/ressources/left_item';
 import Right_Item from '../components/ressources/right_item';
+import Left_Content from '../components/ressources/left_content';
+import Right_Content from '../components/ressources/right_content';
 
 const product_data = data.Product;
 
-const rootPanels = product_data.map((item,i) => i%2 == 0 ?
-    {key: {i}, title: {content:<Left_Item/>, icon: ''}, content: {content : i} }
+const rootPanels = product_data.map((item,i) => i%2 === 0 ?
+    {key: {i}, title: {content:<Left_Item title={item.title}/>, icon:''}, content: {content : <Left_Content/>} }
     :
-    {key: {i}, title: {content:<Right_Item/>, icon: ''}, content: {content : i} }
+    {key: {i}, title: {content:<Right_Item title={item.title}/>, icon:''}, content: {content : <Right_Content/>} }
   );
-
-console.log(rootPanels);
-
-
 
 function Commande() {
     const [total, setTotal] = useState(0);
@@ -30,7 +28,7 @@ function Commande() {
     <div className="Main_container">
       <Header title='Commander'/>
       <div className="Body_container">
-      <Accordion defaultActiveIndex={0} panels={rootPanels}/>
+      <Accordion defaultActiveIndex={-1} panels={rootPanels}/>
       </div>
       <Bottom total={total}/>
     </div>
