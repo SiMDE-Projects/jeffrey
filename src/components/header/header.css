@@ -13,6 +13,10 @@
   justify-content: center;
 }
 
+.header h1{
+  font-size: 2rem;
+}
+
 .Header_container{
   position: fixed;
   align-items: center;
@@ -27,4 +31,8 @@
 .logout{
   position: absolute;
   left: 10%;
+}
+.setting{
+  position: absolute;
+  right: 10%;
 }

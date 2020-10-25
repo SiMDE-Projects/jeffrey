@@ -11,6 +11,7 @@ const Header = ({ title }) => (
       <div>
         <h1>{title}</h1>
       </div>
+      <Icon className='setting' name='setting' size='large'/>
     </div>
   </div>
 )
