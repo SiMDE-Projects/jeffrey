@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   width: 90%;
-  height: 8vh;
+  height: 15vh;
   background-color: #B3001B;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
@@ -9,6 +9,7 @@
   color: #FCFCFC;
   z-index: 3;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -18,7 +19,12 @@
   justify-content: center;
   background-color: #333333;
   top: 0;
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   z-index: 3
+}
+
+.logout{
+  position: absolute;
+  left: 10%;
 }

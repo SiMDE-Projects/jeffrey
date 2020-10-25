@@ -1,11 +1,16 @@
 import React from 'react';
 
+import { Icon } from 'semantic-ui-react';
+
 import './header.css'
 
 const Header = ({ title }) => (
   <div className="Header_container">
     <div  className="header">
-      <h1>{title}</h1>
+      <Icon className='logout' name='log out' size='large'/>
+      <div>
+        <h1>{title}</h1>
+      </div>
     </div>
   </div>
 )
