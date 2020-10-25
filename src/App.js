@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { hot } from "react-hot-loader/root";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { withNamespaces } from "react-i18next";
+import "./App.css";
+import Accueil from "@pages/accueil.js";
+import Commande from "@pages/commande.js";
+import Suivi from "@pages/suivi.js";
 
-function App() {
+function App({ t }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <React.Suspense fallback={<div>{t("loading")}</div>}>
+        <Switch>
+          <Route path="/" exact component={Accueil} />
+          <Route path="/order" exact component={Commande} />
+          <Route path="/track" exact component={Suivi} />
+        </Switch>
+      </React.Suspense>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default withNamespaces()(
+  process.env.NODE_ENV === "development" ? hot(App) : App
+);
