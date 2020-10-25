@@ -13,8 +13,8 @@ function App({ t }) {
       <React.Suspense fallback={<div>{t("loading")}</div>}>
         <Switch>
           <Route path="/" exact component={Accueil} />
-          <Route path="/commande" exact component={Commande} />
-          <Route path="/suivre" exact component={Suivi} />
+          <Route path="/order" exact component={Commande} />
+          <Route path="/track" exact component={Suivi} />
         </Switch>
       </React.Suspense>
     </BrowserRouter>
