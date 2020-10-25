@@ -1,16 +1,14 @@
-import React from 'react';
+import React from "react";
+import { withNamespaces } from "react-i18next";
+import Header from "@components/header/header";
 
-import ScreenTitle from '../components/header/screenTitle.js';
-
-function Suivi() {
+function Suivi({ t }) {
   return (
     <div className="App">
-      <ScreenTitle title='Suivi'>
-      </ScreenTitle>
-      <div className="App-body">
-      </div>
+      <Header title={t("track")} />
+      <div className="App-body"></div>
     </div>
   );
 }
 
-export default Suivi;
+export default withNamespaces()(Suivi);
