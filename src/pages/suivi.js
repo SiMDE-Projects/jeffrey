@@ -1,15 +1,14 @@
-import React from 'react';
-
+import React from "react";
+import { withNamespaces } from "react-i18next";
 import Header from "../components/header/header";
 
-function Suivi() {
+function Suivi({ t }) {
   return (
     <div className="App">
-      <Header title='Suivi'/>
-      <div className="App-body">
-      </div>
+      <Header title={t("track")} />
+      <div className="App-body"></div>
     </div>
   );
 }
 
-export default Suivi;
+export default withNamespaces()(Suivi);
