@@ -1,7 +1,7 @@
+import { hot } from "react-hot-loader/root";
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { withNamespaces } from "react-i18next";
-import { hot } from "react-hot-loader/root";
 import "./App.css";
 import Accueil from "@pages/accueil.js";
 import Commande from "@pages/commande.js";
