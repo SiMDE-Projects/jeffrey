@@ -22,7 +22,7 @@ const rootPanels = product_data.map((item,i) => i%2 === 0 ?
   );
 
 function Commande() {
-    const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState(0);
 
   return (
     <div className="Main_container">

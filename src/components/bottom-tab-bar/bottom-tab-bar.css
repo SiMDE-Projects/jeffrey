@@ -5,11 +5,16 @@
     color: #FCFCFC;
     font-weight: bold;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
     display: flex;
     width: 100%;
     position: fixed;
     z-index: 3;
+}
+
+.Bottom h1{
+  font-size: 1rem;
 }
 
 .Buy_button {
@@ -22,9 +27,19 @@
     align-items: center;
     border-radius: 5vh;
     background-color: #B3001B;
-    border-color: #333333;
+    border: 0;
 }
 
 .Buy  {
   height: 5.5vh;
+}
+
+.Right_text{
+  position: absolute;
+  left: 10%;
+}
+
+.Left_text{
+  position: absolute;
+  right: 10%;
 }
