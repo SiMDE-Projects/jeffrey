@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { withNamespaces } from "react-i18next";
+import { hot } from "react-hot-loader/root";
 import "./App.css";
-import Accueil from "./pages/accueil.js";
-import Commande from "./pages/commande.js";
-import Suivi from "./pages/suivi.js";
+import Accueil from "@pages/accueil.js";
+import Commande from "@pages/commande.js";
+import Suivi from "@pages/suivi.js";
 
 function App({ t }) {
   return (
@@ -20,4 +21,6 @@ function App({ t }) {
   );
 }
 
-export default withNamespaces()(App);
+export default withNamespaces()(
+  process.env.NODE_ENV === "development" ? hot(App) : App
+);

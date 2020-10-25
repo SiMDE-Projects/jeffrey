@@ -1,6 +1,6 @@
 import React from "react";
 import { withNamespaces } from "react-i18next";
-import Header from "../components/header/header";
+import Header from "@components/header/header";
 
 function Suivi({ t }) {
   return (
