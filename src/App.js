@@ -7,6 +7,8 @@ import Accueil from "@pages/accueil.js";
 import Commande from "@pages/commande.js";
 import Suivi from "@pages/suivi.js";
 
+//Comit
+
 function App({ t }) {
   return (
     <BrowserRouter>
