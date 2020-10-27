@@ -1,0 +1,46 @@
+language: node_js
+sudo: false
+dist: xenial
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
+
+node_js:
+  - "11"
+
+before_install:
+  - export REACT_APP_RELEASE=$TRAVIS_BUILD_NUMBER
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.9.2
+  - export PATH=$HOME/.yarn/bin:$PATH
+  # - npm i -g @sentry/cli
+
+cache:
+  yarn: true
+
+script:
+  - export NODE_ENV=production
+  # Allow warnings on build
+  - export CI=false
+  - yarn lint
+  - yarn build
+# before_deploy:
+#   - ./ci/before_deploy.sh
+#
+# deploy:
+#   provider: s3
+#   access_key_id: ${AWS_ACCESS_KEY_ID}
+#   secret_access_key: ${AWS_SECRET_ACCESS_KEY}
+#   bucket: js-apps-builds-nemopay
+#   region: eu-west-1
+#   local-dir: build
+#   upload-dir: carnage
+#   skip_cleanup: true
+#   on:
+#     branch: master
+#
+# after_deploy:
+#   - ./ci/after_deploy.sh

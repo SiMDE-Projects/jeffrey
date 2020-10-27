@@ -1,6 +1,13 @@
-const { alias, configPaths } = require("react-app-rewire-alias");
-const rewireReactHotLoader = require("react-app-rewire-hot-loader");
+const { override, addWebpackAlias, disableEsLint } = require('customize-cra');
+const path = require('path');
 
-module.exports = function override(config, env) {
-  return alias(configPaths())(rewireReactHotLoader(config, env));
-};
+module.exports = override(
+    disableEsLint(),
+    addWebpackAlias({
+        react: path.resolve('./node_modules/react'),
+        '@components': path.resolve('./src/components'),
+        '@assets': path.resolve('./src/assets'),
+        '@locales': path.resolve('./src/pages'),
+        '@pages': path.resolve('./src/pages')
+    })
+);
