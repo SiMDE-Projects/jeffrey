@@ -4,9 +4,9 @@ import Header from '@components/header/header';
 
 function Accueil() {
   return (
-    <div className="App">
+    <div className="app">
       <Header title="Accueil" />
-      <div className="App-body" />
+      <div className="appBody" />
     </div>
   );
 }

@@ -1,96 +1,27 @@
-.header {
-  position: absolute;
-  width: 90%;
-  height: 18vh;
-  bottom: 0;
-  background-color: #B3001B;
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
-  color: #FCFCFC;
-  z-index: 3;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.header h1{
-  padding-top: 1.5vh;
-  font-size: calc(15px + 4vmin);
-}
-
-.Header_container{
+.headerContainer{
   position: fixed;
   align-items: center;
   justify-content: center;
-  background-color: #333333;
+  background-color: #03224C;
   top: 0;
-  height: 20vh;
+  color: #FCFCFC;
+  height: 10vh;
   width: 100%;
   z-index: 3
 }
-
 .logout{
   position: absolute;
-  top: 15%;
-  left: 10%;
-}
-.setting{
-  position: absolute;
-  top: 15%;
-  right: 10%;
-}
-.left_header{
-  position: absolute;
-  width: 52%;
-  left: 0;
-  z-index: 5;
-  bottom: 0;
-}
-.right_header{
-  position: absolute;
-  width: 52%;
-  right: 0;
-  z-index: 4;
-  bottom: 0;
-}
-.cart{
-  position: absolute;
   left: 5%;
-  bottom: 20%;
-  z-index: 10;
 }
-.bell{
+.settings{
   position: absolute;
   right: 5%;
-  bottom: 20%;
-  z-index: 10;
 }
-.line{
-  z-index: 10;
-}
-hr{
-  position: absolute;
-  border: 0;
-  bottom: 0;
-  height: 1px;
-  background-color: black;
-  z-index: 10;
+.headerContainer hr{
   width: 100%;
-}
-.left_text{
+  bottom: 0;
   position: absolute;
-  left: 5%;
-  bottom: -7.5%;
-  z-index: 10;
-  font-size: 1rem;
-  color: white;
-  z-index: 10;
-}
-.right_text{
-  position: absolute;
-  right: 5%;
-  bottom: -7.5%;
-  z-index: 10;
-  font-size: 1rem;
+  border: 2;
+  border-color: #188CE0;
   z-index: 10;
 }

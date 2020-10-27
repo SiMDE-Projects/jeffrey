@@ -1,22 +1,16 @@
-import React from "react";
+import React from 'react';
+import BottomItem from '@components/ressources/BottomItem';
+import { useLocation } from "react-router-dom";
+import './bottom-tab-bar.css';
 
-import { Icon } from "semantic-ui-react";
+const Bottom = () => {
+  const loc = useLocation().pathname ;
 
-import "./bottom-tab-bar.css";
-//import buy from '../../assets/Buy.svg';
-
-const Bottom = ({ total }) => (
-  <div className="Bottom">
-    <div className="Right_text">
-      <h1>Total</h1>
-    </div>
-    <button className="Buy_button">
-      <Icon name="paper plane" size="big" inverted />
-    </button>
-    <div className="Left_text">
-      <h1>{total}€</h1>
-    </div>
+  return(
+  <div className="bottom">
+    <BottomItem active={loc === '/order'} icon='cart' redirect='/order'/>
+    <BottomItem active={loc === '/track'} icon='bell' redirect='/track'/>
   </div>
-);
+)};
 
 export default Bottom;

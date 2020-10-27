@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './css/suivi.css';
+import './suivi.css';
 import { withNamespaces } from 'react-i18next';
 import { Progress, Button } from 'semantic-ui-react';
 import Header from '@components/header/header';
+import Bottom from '@components/bottom-tab-bar/bottom-tab-bar';
+import OrderItem from '@components/ressources/OrderItem';
 
 function Suivi({ t }) {
   const [percent,setPercent] = useState(20);
@@ -14,16 +16,12 @@ function Suivi({ t }) {
   }
 
   return (
-    <div className="Main_container">
-      <Header title={t('track')} />
-      <div className="Body_container">
-      <div className="step">
-      <h2>Commande n°x</h2>
-      <h3>{etat[percent/20-1]}</h3>
-      <Progress percent={percent} indicating/>
-      <Button onClick={increment}>Increment</Button>
+    <div className="mainContainer">
+      <Header title={t('track').toUpperCase()} />
+      <div className="bodyContainer">
+      <OrderItem percent={40} etat='En attente de récupération...'/>
       </div>
-      </div>
+      <Bottom />
 
     </div>
   );

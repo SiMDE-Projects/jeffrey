@@ -1,19 +1,17 @@
-.Main_container{
+.mainContainer{
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.Body_container{
+.bodyContainer{
   display: flex;
+  width: 100%;
+  min-height: 80vh;
   flex-direction: column;
   position: relative;
-  margin-top: 15vh;
+  margin-top: 10vh;
   padding-top: 2vh;
   margin-bottom: 10vh;
-  align-items: center;
-}
-
-.step{
-  width: 90%;
+  background-color: #FCFCFC;
 }

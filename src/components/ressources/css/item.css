@@ -1,4 +1,6 @@
-.Right_item, .Left_item{
+/* Left/Right Item/Content .js */
+
+.rightItem, .leftItem{
   position: relative;
   height: 10vh;
   width: 80vw;
@@ -7,63 +9,106 @@
   justify-content: center;
   align-items: center;
   margin-top: -2vh;
-  color: #FCFCFC;
+  border: solid 1px;
+  background-color: #FCFCFC;
 }
-
-.Right_item h1, .Left_item h1{
-  font-size: 2.5rem;
-  font-weight: bold;
+.rightItem h1, .leftItem h1{
+  padding-top: 1vh;
+  font-family: 'Studio Neon';
+  font-size: 3rem;
+  font-weight: lighter;
 }
-
-.Right_content, .Left_content{
+.rightContent, .leftContent{
   position: relative;
   width: 80vw;
   display: flex;
   flex-direction: row;
-  border-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+  border-bottom-right-radius: 1vh;
   justify-content: center;
-  background-color: #5E5E5E;
   align-items: flex-start;
   margin-top: -3.5vh;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+  background-color: #FCFCFC;
+  border-color: black;
+}
+.rightContent{
+  border-color: #03224C;
+}
+.leftContent{
+  border-color: #B3001B;
+  color: #B3001B;
+}
+.rightItem{
+  border-color: #03224C;
+  color: #03224C;
+}
+.leftItem{
+  border-color: #B3001B;
+  color: #B3001B;
 }
 
-.Right_content{
-  left: 15%;
-}
+/* Produit.js */
 
-.Left_content{
-  left: 5%;
-}
-
-.Right_item{
-  background-color: #B3001B;
-  left: 15%;
-}
-
-.Left_item{
-  background-color: #333333;
-  left: 5%;
-}
-
-.Produit{
-  background-color: white;
+.produit{
+  background-color: pink;
   border-radius: 100vh;
   height: 10vh;
   width: 10vh;
   margin: 2vh;
 }
-
-.Product_list_Left{
+.productListLeft{
+  display: flex;
+  flex-direction: column;
+}
+.productListMidle{
+  display: flex;
+  flex-direction: column;
+}
+.productListRight{
   display: flex;
   flex-direction: column;
 }
 
-.Product_list_Midle{
+/* BottomItem.js */
+
+.bottomItem{
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.topLine{
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 2px;
+  background-color: #B3001B
+}
+.bottomLine{
+  position: absolute;
+  bottom: 0;
+  width: 50vw;
+  height: 2px;
+  background-color: #B3001B
 }
 
-.Product_list_Right{
+/* OrderItem.js */
+
+.orderItem{
+  width: 80%;
+  border: solid 1px;
+  border-radius: 1vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orderItem h3{
+  align-self: flex-start;
+  margin-left: 2vh;
+}
+.progressBar{
+  width: 80%;
 }
