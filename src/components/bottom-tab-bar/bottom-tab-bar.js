@@ -1,12 +1,15 @@
 import React from 'react';
-import BottomItem from '../ressources/BottomItem';
+import BottomItem from '@components/ressources/BottomItem';
+import { useLocation } from "react-router-dom";
 import './bottom-tab-bar.css';
 
-const Bottom = ({ indexActive }) => {
+const Bottom = () => {
+  const loc = useLocation().pathname ;
+
   return(
-  <div className="Bottom">
-    { indexActive === 0 ? <BottomItem active={true} icon='cart' redirect='/order'/> : <BottomItem active={false} icon='cart' redirect='/order'/>}
-    { indexActive === 1 ? <BottomItem active={true} icon='bell' redirect='/track'/> : <BottomItem active={false} icon='bell' redirect='/track'/>}
+  <div className="bottom">
+    <BottomItem active={loc === '/order'} icon='cart' redirect='/order'/>
+    <BottomItem active={loc === '/track'} icon='bell' redirect='/track'/>
   </div>
 )};
 

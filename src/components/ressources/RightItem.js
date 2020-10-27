@@ -3,7 +3,7 @@ import React from "react";
 import "./css/item.css";
 
 const RightItem = ({ title }) => (
-  <div className="Right_item">
+  <div className="rightItem">
     <h1>{title}</h1>
   </div>
 );

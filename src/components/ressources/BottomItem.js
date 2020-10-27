@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 const BottomItem = ({ active, icon, redirect }) => {
     return(
-    <div className='Bottom_item'>
+    <div className='bottomItem'>
     { active === true ?
       <>
-        <div className='top_line'/>
+        <div className='topLine'/>
         <Icon name={icon} size='big'/>
-        <div className='bottom_line'/>
+        <div className='bottomLine'/>
       </>
     :
       <>

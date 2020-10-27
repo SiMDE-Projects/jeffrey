@@ -6,7 +6,7 @@ const Produit = ({ prix }) => {
   const { total, handleTotal } = useContext(TotalContext);
 
   return(
-    <div className='Produit' onClick={() => handleTotal(prix)}>
+    <div className='produit' onClick={() => handleTotal(prix)}>
     </div>
   )
 }

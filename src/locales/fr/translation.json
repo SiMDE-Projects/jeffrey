@@ -1,5 +1,6 @@
 {
-  "TRACK": "SUIVRE",
-  "BUY": "COMMANDER",
-  "loading": "Chargement"
+  "track": "Suivre",
+  "order": "Commander",
+  "loading": "Chargement",
+  "order n°": "Commande n°"
 }

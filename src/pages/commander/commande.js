@@ -33,13 +33,13 @@ function Commande({ t }) {
     }));
 
   return (
-    <div className="Main_container">
+    <div className="mainContainer">
       <TotalContext.Provider value={{ total, handleTotal }}>
-        <Header title={t('BUY')} />
-        <div className="Body_container">
+        <Header title={t('order').toUpperCase()} />
+        <div className="bodyContainer">
           <Accordion defaultActiveIndex={-1} panels={rootPanels} />
         </div>
-        <Bottom indexActive={0} />
+        <Bottom />
       </TotalContext.Provider>
     </div>
   );

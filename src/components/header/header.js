@@ -5,7 +5,7 @@ import { Icon, Segment } from 'semantic-ui-react';
 import './header.css'
 
 const Header = ({ title }) => (
-  <div className="Header_container">
+  <div className="headerContainer">
       <Link className='logout' to='/'>
         <Icon name='log out' size='large'/>
       </Link>

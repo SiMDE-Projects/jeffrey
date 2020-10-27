@@ -1,4 +1,4 @@
-.Header_container{
+.headerContainer{
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
   position: absolute;
   right: 5%;
 }
-.Header_container hr{
+.headerContainer hr{
   width: 100%;
   bottom: 0;
   position: absolute;

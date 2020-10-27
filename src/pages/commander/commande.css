@@ -1,10 +1,10 @@
-.Main_container{
+.mainContainer{
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.Body_container{
+.bodyContainer{
   display: flex;
   flex-direction: column;
   position: absolute;

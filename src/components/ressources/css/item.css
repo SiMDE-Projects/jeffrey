@@ -1,4 +1,4 @@
-.Right_item, .Left_item{
+.rightItem, .leftItem{
   position: relative;
   height: 10vh;
   width: 80vw;
@@ -10,12 +10,12 @@
   border: solid 1px;
   background-color: #FCFCFC;
 }
-.Right_item h1, .Left_item h1{
+.rightItem h1, .leftItem h1{
   font-family: 'Studio Neon';
   font-size: 3rem;
   font-weight: lighter;
 }
-.Right_content, .Left_content{
+.rightContent, .leftContent{
   position: relative;
   width: 80vw;
   display: flex;
@@ -31,61 +31,61 @@
   background-color: #FCFCFC;
   border-color: black;
 }
-.Right_content{
+.rightContent{
   border-color: #03224C;
 }
-.Left_content{
+.leftContent{
   border-color: #B3001B;
   color: #B3001B;
 }
-.Right_item{
+.rightItem{
   border-color: #03224C;
   color: #03224C;
 }
-.Left_item{
+.leftItem{
   border-color: #B3001B;
   color: #B3001B;
 }
-.Produit{
+.produit{
   background-color: pink;
   border-radius: 100vh;
   height: 10vh;
   width: 10vh;
   margin: 2vh;
 }
-.Product_list_Left{
+.productListLeft{
   display: flex;
   flex-direction: column;
 }
-.Product_list_Midle{
+.productListMidle{
   display: flex;
   flex-direction: column;
 }
-.Product_list_Right{
+.productListRight{
   display: flex;
   flex-direction: column;
 }
-.Bottom_item{
+.bottomItem{
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
 }
-.top_line{
+.topLine{
   position: absolute;
   top: 0;
   width: 50vw;
   height: 2px;
   background-color: #B3001B
 }
-.bottom_line{
+.bottomLine{
   position: absolute;
   bottom: 0;
   width: 50vw;
   height: 2px;
   background-color: #B3001B
 }
-.order_item{
+.orderItem{
   width: 80%;
   border: solid 1px;
   border-radius: 2px;
@@ -93,10 +93,10 @@
   justify-content: center;
   align-items: center;
 }
-.order_item h3{
+.orderItem h3{
   align-self: flex-start;
   margin-left: 2vh;
 }
-.progress_bar{
+.progressBar{
   width: 80%;
 }

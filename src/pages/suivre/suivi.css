@@ -1,18 +1,14 @@
-.Main_container{
+.mainContainer{
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.Body_container{
+.bodyContainer{
   display: flex;
   flex-direction: column;
   position: relative;
   margin-top: 10vh;
   padding-top: 2vh;
   margin-bottom: 10vh;
-}
-
-.step{
-  width: 90%;
 }

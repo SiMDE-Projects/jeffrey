@@ -16,12 +16,12 @@ function Suivi({ t }) {
   }
 
   return (
-    <div className="Main_container">
-      <Header title={t('TRACK')} />
-      <div className="Body_container">
+    <div className="mainContainer">
+      <Header title={t('track').toUpperCase()} />
+      <div className="bodyContainer">
       <OrderItem percent={40} etat='En attente de récupération...'/>
       </div>
-      <Bottom indexActive={1} />
+      <Bottom />
 
     </div>
   );
