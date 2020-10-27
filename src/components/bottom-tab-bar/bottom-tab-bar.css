@@ -1,9 +1,8 @@
 .Bottom {
     height: 10vh;
     bottom: 0;
-    background-color: #333333;
+    background-color: #03224C;
     color: #FCFCFC;
-    font-weight: bold;
     align-items: center;
     flex-direction: row;
     justify-content: center;
@@ -11,35 +10,4 @@
     width: 100%;
     position: fixed;
     z-index: 3;
-}
-
-.Bottom h1{
-  font-size: 1rem;
-}
-
-.Buy_button {
-    position: relative;
-    top: -2.5vh;
-    height: 10vh;
-    width: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5vh;
-    background-color: #B3001B;
-    border: 0;
-}
-
-.Buy  {
-  height: 5.5vh;
-}
-
-.Right_text{
-  position: absolute;
-  left: 10%;
-}
-
-.Left_text{
-  position: absolute;
-  right: 10%;
 }

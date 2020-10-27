@@ -6,7 +6,8 @@ module.exports = function override(config, env) {
     "@components": "src/components",
     "@assets": "src/assets",
     "@locales": "src/locales",
-    "@pages": "src/pages"
+    "@pages": "src/pages",
+    "@context": "src/context"
   })(config);
   return rewireReactHotLoader(config, env);
 };

@@ -7,13 +7,8 @@
 .Body_container{
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-top: 15vh;
+  position: absolute;
   padding-top: 2vh;
-  margin-bottom: 10vh;
   align-items: center;
-}
-
-.step{
-  width: 90%;
+  justify-content: center;
 }

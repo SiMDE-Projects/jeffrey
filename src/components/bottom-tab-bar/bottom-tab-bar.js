@@ -1,22 +1,13 @@
-import React from "react";
+import React from 'react';
+import BottomItem from '../ressources/BottomItem';
+import './bottom-tab-bar.css';
 
-import { Icon } from "semantic-ui-react";
-
-import "./bottom-tab-bar.css";
-//import buy from '../../assets/Buy.svg';
-
-const Bottom = ({ total }) => (
+const Bottom = ({ indexActive }) => {
+  return(
   <div className="Bottom">
-    <div className="Right_text">
-      <h1>Total</h1>
-    </div>
-    <button className="Buy_button">
-      <Icon name="paper plane" size="big" inverted />
-    </button>
-    <div className="Left_text">
-      <h1>{total}€</h1>
-    </div>
+    { indexActive === 0 ? <BottomItem active={true} icon='cart' redirect='/order'/> : <BottomItem active={false} icon='cart' redirect='/order'/>}
+    { indexActive === 1 ? <BottomItem active={true} icon='bell' redirect='/track'/> : <BottomItem active={false} icon='bell' redirect='/track'/>}
   </div>
-);
+)};
 
 export default Bottom;
