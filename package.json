@@ -46,7 +46,7 @@
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
-        "babel-eslint": "10.0.3",
+        "babel-eslint": "^10.1.0",
         "eslint-config-prettier": "^6.10.0",
         "eslint-config-react-app": "^3.0.6",
         "eslint-plugin-i18n-json": "^2.4.0",
