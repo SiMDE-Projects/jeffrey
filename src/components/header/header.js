@@ -1,22 +1,26 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> master
 import { Icon } from 'semantic-ui-react';
 
-import './header.css'
+import './header.css';
 
 const Header = ({ title }) => (
-  <div className="headerContainer">
-      <Link className='logout' to='/'>
-        <Icon name='log out' size='large'/>
-      </Link>
-      <div>
-        <h1>{title}</h1>
-      </div>
-      <Link className='settings' to='/'>
-        <Icon className='setting' name='setting' size='large'/>
-      </Link>
-    <hr/>
-  </div>
-)
+    <div className="headerContainer">
+        <Link className="logout" to="/">
+            <Icon name="log out" size="large" />
+        </Link>
+        <div>
+            <h1>{title}</h1>
+        </div>
+        <Link className="settings" to="/">
+            <Icon className="setting" name="setting" size="large" />
+        </Link>
+        <hr />
+    </div>
+);
 
 export default Header;

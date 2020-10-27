@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import TotalContext from "../../context/total-context";
+import TotalContext from 'context/total-context';
 import './css/item.css';
 
 const Produit = ({ prix, titre, id }) => {

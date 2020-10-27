@@ -1,12 +1,12 @@
-import { hot } from "react-hot-loader/root";
-import React, { useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { withNamespaces } from "react-i18next";
-import "./App.css";
-import Accueil from "@pages/accueil/accueil.js";
-import Commande from "@pages/commander/commande.js";
-import Suivi from "@pages/suivre/suivi.js";
-import TotalContext from '@context/total-context';
+import { hot } from 'react-hot-loader/root';
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { withNamespaces } from 'react-i18next';
+import './App.css';
+import Accueil from 'pages/accueil/accueil';
+import Commande from 'pages/commander/commande';
+import Suivi from 'pages/suivre/suivi';
+import TotalContext from 'context/total-context';
 
 function App({ t }) {
   const [total, setTotal] = useState(0);
