@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-=======
 import { Link } from 'react-router-dom';
->>>>>>> master
 import { Icon } from 'semantic-ui-react';
 
 import './header.css';

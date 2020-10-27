@@ -14,50 +14,9 @@ import TotalContext from 'context/total-context';
 const product_data = data.Product;
 
 function Commande({ t }) {
-<<<<<<< HEAD
 
-  const { count, total } = useContext(TotalContext);
+    const { count, total } = useContext(TotalContext);
 
-  const rootPanels = product_data.map((item, i) => (i % 2 === 0
-    ? {
-      key: item.id,
-      title: { content: <LeftItem title={item.title} />, icon: '' },
-      content: { content: <LeftContent produits={item.details} /> },
-=======
-    const [total, setTotal] = useState(0);
-    const [count, setCount] = useState(0);
-
-    function handleTotal(prix) {
-        setTotal(total + prix);
-        setCount(count + 1);
->>>>>>> master
-    }
-
-<<<<<<< HEAD
-  return (
-    <div className="mainContainer">
-        <Header title={t('order').toUpperCase()} />
-        <div className="bodyContainer">
-          <Accordion defaultActiveIndex={-1} panels={rootPanels} />
-        </div>
-        <div className='buttonCommander'>
-          {count >= 1 ? <div className='sendButton'><h2>Commander</h2></div> : null}
-        </div>
-        <div className='affichagePrix'>
-          <div>
-            <h3>Total</h3>
-          </div>
-          <div>
-            {count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}
-          </div>
-          <div>
-            <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
-          </div>
-        </div>
-        <Bottom />
-    </div>
-  );
-=======
     const rootPanels = product_data.map((item, i) =>
         i % 2 === 0
             ? {
@@ -73,33 +32,29 @@ function Commande({ t }) {
     );
 
     return (
-        <div className="mainContainer">
-            <TotalContext.Provider value={{ total, handleTotal }}>
-                <Header title={t('order').toUpperCase()} />
-                <div className="bodyContainer">
-                    <Accordion defaultActiveIndex={-1} panels={rootPanels} />
-                </div>
-                <div className="buttonCommander">
-                    {count >= 1 ? (
-                        <div className="sendButton">
-                            <h2>Commander</h2>
-                        </div>
-                    ) : null}
-                </div>
-                <div className="affichagePrix">
-                    <div>
-                        <h3>Total</h3>
-                    </div>
-                    <div>{count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}</div>
-                    <div>
-                        <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
-                    </div>
-                </div>
-                <Bottom />
-            </TotalContext.Provider>
-        </div>
+      <div className="mainContainer">
+          <Header title={t('order').toUpperCase()} />
+          <div className="bodyContainer">
+            <Accordion defaultActiveIndex={-1} panels={rootPanels} />
+          </div>
+          <div className='buttonCommander'>
+            {count >= 1 ? <div className='sendButton'><h2>Commander</h2></div> : null}
+          </div>
+          <div className='affichagePrix'>
+            <div>
+              <h3>Total</h3>
+            </div>
+            <div>
+              {count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}
+            </div>
+            <div>
+              <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
+            </div>
+          </div>
+          <Bottom />
+      </div>
     );
->>>>>>> master
+
 }
 
 export default withNamespaces()(Commande);
