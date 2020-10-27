@@ -1,5 +1,5 @@
 {
-  "track": "Suivre",
-  "buy": "Commander",
+  "TRACK": "SUIVRE",
+  "BUY": "COMMANDER",
   "loading": "Chargement"
 }

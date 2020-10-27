@@ -35,7 +35,7 @@ function Commande({ t }) {
   return (
     <div className="Main_container">
       <TotalContext.Provider value={{ total, handleTotal }}>
-        <Header title={t('buy')} />
+        <Header title={t('BUY')} />
         <div className="Body_container">
           <Accordion defaultActiveIndex={-1} panels={rootPanels} />
         </div>
