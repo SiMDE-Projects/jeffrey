@@ -16,13 +16,8 @@ const product_data = data.Product;
 function Commande({ t }) {
   const [total, setTotal] = useState(0);
 
-<<<<<<< HEAD
   function handleTotal(prix) {
     setTotal(total+prix);
-=======
-  function handleTotal() {
-    setTotal(total + 1);
->>>>>>> master~
   }
 
   const rootPanels = product_data.map((item, i) => (i % 2 === 0
