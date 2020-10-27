@@ -8,7 +8,7 @@ const READ_LOCALES = ['fr']; // Could be set via variable
 const LOCALES = {};
 
 const get_locale_path = (locale, read=true) => {
-	return `${read ? '../../' : './'}src/locales/${locale}/index.json`;
+	return `${read ? '../../' : './'}src/locales/${locale}/translation.json`;
 };
 
 for(let locale of READ_LOCALES) {

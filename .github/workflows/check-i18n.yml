@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: 'Prepare i18next script'
-        run: echo see later #npm i fishingrod
-#       - name: 'Check keys'
-#         run: node ./.github/actions/translations.js --github
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm i fishingrod
+      - name: 'Check keys'
+        run: node ./.github/actions/translations.js --github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
