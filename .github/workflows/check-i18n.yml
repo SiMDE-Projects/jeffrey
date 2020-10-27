@@ -1,19 +1,19 @@
-name: 'I18next'
-
-on:
-  pull_request:
-    types: ['opened', 'synchronize', 'edited']
-
-jobs:
-  check_i18next_keys:
-    name: 'Check i18next keys in fr-FR'
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v1
-      - name: 'Prepare i18next script'
-        run: npm i fishingrod
-      - name: 'Check keys'
-        run: node ./.github/actions/translations.js --github
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# name: 'I18next'
+#
+# on:
+#   pull_request:
+#     types: ['opened', 'synchronize', 'edited']
+#
+# jobs:
+#   check_i18next_keys:
+#     name: 'Check i18next keys in fr-FR'
+#     runs-on: ubuntu-latest
+#
+#     steps:
+#       - uses: actions/checkout@v1
+#       - name: 'Prepare i18next script'
+#         run: npm i fishingrod
+#       - name: 'Check keys'
+#         run: node ./.github/actions/translations.js --github
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
