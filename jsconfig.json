@@ -1,11 +1,5 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@components": "src/components",
-      "@assets": "src/assets",
-      "@locales": "src/locales",
-      "@pages": "src/pages"
+    "compilerOptions": {
+        "baseUrl": "src"
     }
-  }
 }

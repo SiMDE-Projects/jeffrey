@@ -1,50 +1,64 @@
 {
-  "name": "jeffrey",
-  "version": "0.0.1",
-  "main": "src/index.js",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "i18next": "^19.8.3",
-    "react": "^16.13.1",
-    "react-accordeon": "^1.1.1",
-    "react-dom": "npm:@hot-loader/react-dom@^17.0.0",
-    "react-i18next": "^9.0.10",
-    "react-inline-transition-group": "^2.2.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.4",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.0"
-  },
-  "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "lint": "eslint src/**/*.js",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "react-app-rewire-alias": "^0.1.6",
-    "react-app-rewire-hot-loader": "^2.0.1",
-    "react-app-rewired": "^2.1.6",
-    "react-hot-loader": "^4.13.0"
-  }
+    "name": "jeffrey",
+    "version": "0.0.1",
+    "main": "src/index.js",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.11.0",
+        "i18next": "^19.3.2",
+        "i18next-browser-languagedetector": "^2.2.3",
+        "react": "^16.13.1",
+        "react-accordeon": "^1.1.1",
+        "react-dom": "npm:@hot-loader/react-dom@^17.0.0",
+        "react-i18next": "^9.0.10",
+        "react-inline-transition-group": "^2.2.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "^3.4.4",
+        "semantic-ui-css": "^2.4.1",
+        "semantic-ui-react": "^2.0.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "lint": "eslint src",
+        "linf": "eslint src --fix",
+        "lint:i18n": "npx eslint --no-eslintrc -c ./.eslintrc-i18n.js --ext .json --format ./node_modules/eslint-plugin-i18n-json/formatter.js public/ticket/locales/",
+        "i18n": "node .github/actions/translations.js --fix --dev"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@testing-library/react-hooks": "^3.2.1",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "babel-eslint": "^10.1.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-config-react-app": "^3.0.6",
+        "eslint-plugin-i18n-json": "^2.4.0",
+        "eslint-plugin-jasmine": "^4.1.1",
+        "eslint-plugin-jest": "^23.8.2",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.x",
+        "prettier": "^1.19.1",
+        "customize-cra": "^1.0.0",
+        "react-app-rewire-alias": "^0.1.6",
+        "react-app-rewire-hot-loader": "^2.0.1",
+        "react-app-rewired": "^2.1.6",
+        "react-hot-loader": "^4.13.0"
+    }
 }
