@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Icon, Segment } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 import './header.css'
 

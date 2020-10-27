@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { withNamespaces } from 'react-i18next';
-import { Accordion, Button } from 'semantic-ui-react';
+import { Accordion } from 'semantic-ui-react';
 import './commande.css';
 import data from '@assets/data.json';
 import Header from '@components/header/header';
@@ -14,13 +14,8 @@ import TotalContext from '@context/total-context';
 const product_data = data.Product;
 
 function Commande({ t }) {
-  const [total, setTotal] = useState(0);
-  const [count, setCount] = useState(0);
 
-  function handleTotal(prix) {
-    setTotal(total+prix);
-    setCount(count+1);
-  }
+  const { count, total } = useContext(TotalContext);
 
   const rootPanels = product_data.map((item, i) => (i % 2 === 0
     ? {
@@ -36,7 +31,6 @@ function Commande({ t }) {
 
   return (
     <div className="mainContainer">
-      <TotalContext.Provider value={{ total, handleTotal }}>
         <Header title={t('order').toUpperCase()} />
         <div className="bodyContainer">
           <Accordion defaultActiveIndex={-1} panels={rootPanels} />
@@ -56,7 +50,6 @@ function Commande({ t }) {
           </div>
         </div>
         <Bottom />
-      </TotalContext.Provider>
     </div>
   );
 }

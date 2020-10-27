@@ -7,17 +7,17 @@ const LeftContent = ({ produits, changeTotal }) => (
   <div className="leftContent">
     <div className="productListLeft">
       {produits.map((item, i) =>
-        i % 3 === 0 ? <Produit key={item.id} prix={item.prix} /> : null
+        i % 3 === 0 ? <Produit key={item.id} prix={item.prix} titre={item.title} /> : null
       )}
     </div>
     <div className="productListMiddle">
       {produits.map((item, i) =>
-        i % 3 === 1 ? <Produit key={item.id} prix={item.prix} /> : null
+        i % 3 === 1 ? <Produit key={item.id} prix={item.prix} titre={item.title} /> : null
       )}
     </div>
     <div className="productListRight">
       {produits.map((item, i) =>
-        i % 3 === 2 ? <Produit key={item.id} prix={item.prix} /> : null
+        i % 3 === 2 ? <Produit key={item.id} prix={item.prix} titre={item.title} /> : null
       )}
     </div>
   </div>

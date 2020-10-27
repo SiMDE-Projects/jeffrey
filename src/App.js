@@ -1,20 +1,31 @@
 import { hot } from "react-hot-loader/root";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { withNamespaces } from "react-i18next";
 import "./App.css";
 import Accueil from "@pages/accueil/accueil.js";
 import Commande from "@pages/commander/commande.js";
 import Suivi from "@pages/suivre/suivi.js";
+import TotalContext from '@context/total-context';
 
 function App({ t }) {
+  const [total, setTotal] = useState(0);
+  const [count, setCount] = useState(0);
+
+  function handleTotal(prix) {
+    setTotal(total+prix);
+    setCount(count+1);
+  }
+
   return (
     <BrowserRouter>
       <React.Suspense fallback={<div>{t("loading")}</div>}>
         <Switch>
-          <Route path="/" exact component={Accueil} />
-          <Route path="/order" exact component={Commande} />
-          <Route path="/track" exact component={Suivi} />
+          <TotalContext.Provider value={{ count, total, handleTotal }}>
+            <Route path="/" exact component={Accueil} />
+            <Route path="/order" exact component={Commande} />
+            <Route path="/track" exact component={Suivi} />
+          </TotalContext.Provider>
         </Switch>
       </React.Suspense>
     </BrowserRouter>
