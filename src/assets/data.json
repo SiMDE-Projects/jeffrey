@@ -1,29 +1,29 @@
 {
   "Product": [
     {
-      "id": "1",
+      "id": 1,
       "title": "Snacks",
       "details": [
         {
-          "id": "31",
+          "id": 11,
           "title": "Deli",
           "prix": 1.50,
           "img": null
         },
         {
-          "id": "32",
+          "id": 12,
           "title": "Deli Red",
           "prix": 2,
           "img": null
         },
         {
-          "id": "33",
+          "id": 13,
           "title": "Barbar",
           "prix": 2.50,
           "img": null
         },
         {
-          "id": "34",
+          "id": 14,
           "title": "Barbar",
           "prix": 2.50,
           "img": null
@@ -31,23 +31,23 @@
       ]
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "Soft",
       "details": [
         {
-          "id": "31",
+          "id": 21,
           "title": "Deli",
           "prix": 1.50,
           "img": null
         },
         {
-          "id": "32",
+          "id": 22,
           "title": "Deli Red",
           "prix": 2,
           "img": null
         },
         {
-          "id": "33",
+          "id": 23,
           "title": "Barbar",
           "prix": 2.50,
           "img": null
@@ -55,23 +55,23 @@
       ]
     },
     {
-      "id": "3",
+      "id": 3,
       "title": "Bières",
       "details": [
         {
-          "id": "31",
+          "id": 31,
           "title": "Deli",
           "prix": 1.50,
           "img": null
         },
         {
-          "id": "32",
+          "id": 32,
           "title": "Deli Red",
           "prix": 2,
           "img": null
         },
         {
-          "id": "33",
+          "id": 33,
           "title": "Barbar",
           "prix": 2.50,
           "img": null
