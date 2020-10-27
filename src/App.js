@@ -3,9 +3,9 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 import './App.css';
-import Accueil from '@pages/accueil/accueil.js';
-import Commande from '@pages/commander/commande.js';
-import Suivi from '@pages/suivre/suivi.js';
+import Accueil from 'pages/accueil/accueil.js';
+import Commande from 'pages/commander/commande.js';
+import Suivi from 'pages/suivre/suivi.js';
 
 function App({ t }) {
     return (

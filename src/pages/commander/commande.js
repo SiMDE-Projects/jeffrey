@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { withNamespaces } from 'react-i18next';
 import { Accordion, Button } from 'semantic-ui-react';
 import './commande.css';
-import data from '@assets/data.json';
-import Header from '@components/header/header';
-import Bottom from '@components/bottom-tab-bar/bottom-tab-bar';
-import LeftItem from '@components/ressources/LeftItem';
-import RightItem from '@components/ressources/RightItem';
-import LeftContent from '@components/ressources/LeftContent';
-import RightContent from '@components/ressources/RightContent';
-import TotalContext from '@context/total-context';
+import data from 'assets/data.json';
+import Header from 'components/header/header';
+import Bottom from 'components/bottom-tab-bar/bottom-tab-bar';
+import LeftItem from 'components/ressources/LeftItem';
+import RightItem from 'components/ressources/RightItem';
+import LeftContent from 'components/ressources/LeftContent';
+import RightContent from 'components/ressources/RightContent';
+import TotalContext from 'context/total-context';
 
 const product_data = data.Product;
 
