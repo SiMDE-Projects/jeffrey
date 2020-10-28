@@ -17,7 +17,7 @@ export default function({ prix, titre, id }) {
                     handleOrder(id);
                 }}
             >
-                <h1>{value !== undefined ? value.count : 0}</h1>
+                <h1>{value ? value.count : 0}</h1>
             </div>
         </div>
     );
