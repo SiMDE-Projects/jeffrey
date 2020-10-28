@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import TotalContext from 'context/total-context';
 import './css/item.css';
 
-const Produit = ({ prix, titre, id }) => {
+export default function({ prix, titre, id }) {
     const { handleTotal, handleOrder, order } = useContext(TotalContext);
 
     const value = order.find(x => x.id === id);
@@ -21,6 +21,4 @@ const Produit = ({ prix, titre, id }) => {
             </div>
         </div>
     );
-};
-
-export default Produit;
+}

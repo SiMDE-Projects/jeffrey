@@ -21,6 +21,7 @@ function App({ t }) {
                 item.count += 1;
                 arret = false;
             }
+            return item;
         });
         if (arret) {
             tmp.push({ id: id, count: 1 });
