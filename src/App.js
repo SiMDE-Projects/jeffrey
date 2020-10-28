@@ -9,45 +9,43 @@ import Suivi from 'pages/suivre/suivi';
 import TotalContext from 'context/total-context';
 
 function App({ t }) {
-  const [total, setTotal] = useState(0);
-  const [count, setCount] = useState(0);
-  const [order, setOrder] = useState([]);
+    const [total, setTotal] = useState(0);
+    const [count, setCount] = useState(0);
+    const [order, setOrder] = useState([]);
 
-  function handleOrder(id) {
-    const tmp = order;
-    var arret = true;
-    order.map((item,i) => {
-      if (item.id === id){
-        item.count += 1;
-        arret = false;
-      }
-    })
-    if (arret){
-      tmp.push({"id":id, "count":1});
+    function handleOrder(id) {
+        const tmp = order;
+        var arret = true;
+        order.map((item, i) => {
+            if (item.id === id) {
+                item.count += 1;
+                arret = false;
+            }
+        });
+        if (arret) {
+            tmp.push({ id: id, count: 1 });
+        }
+        setOrder(tmp);
     }
-    setOrder(tmp);
-  };
 
-  function handleTotal(prix) {
-    setTotal(total+prix);
-    setCount(count+1);
-  };
+    function handleTotal(prix) {
+        setTotal(total + prix);
+        setCount(count + 1);
+    }
 
-  return (
-    <BrowserRouter>
-      <React.Suspense fallback={<div>{t("loading")}</div>}>
-        <Switch>
-          <TotalContext.Provider value={{ count, total, order, handleOrder, handleTotal }}>
-            <Route path="/" exact component={Accueil} />
-            <Route path="/order" exact component={Commande} />
-            <Route path="/track" exact component={Suivi} />
-          </TotalContext.Provider>
-        </Switch>
-      </React.Suspense>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <React.Suspense fallback={<div>{t('loading')}</div>}>
+                <Switch>
+                    <TotalContext.Provider value={{ count, total, order, handleOrder, handleTotal }}>
+                        <Route path="/" exact component={Accueil} />
+                        <Route path="/order" exact component={Commande} />
+                        <Route path="/track" exact component={Suivi} />
+                    </TotalContext.Provider>
+                </Switch>
+            </React.Suspense>
+        </BrowserRouter>
+    );
 }
 
-export default withNamespaces()(
-  process.env.NODE_ENV === "development" ? hot(App) : App
-);
+export default withNamespaces()(process.env.NODE_ENV === 'development' ? hot(App) : App);

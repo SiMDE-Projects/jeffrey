@@ -14,7 +14,6 @@ import TotalContext from 'context/total-context';
 const product_data = data.Product;
 
 function Commande({ t }) {
-
     const { count, total } = useContext(TotalContext);
 
     const rootPanels = product_data.map((item, i) =>
@@ -32,29 +31,30 @@ function Commande({ t }) {
     );
 
     return (
-      <div className="mainContainer">
-          <Header title={t('order').toUpperCase()} />
-          <div className="bodyContainer">
-            <Accordion defaultActiveIndex={-1} panels={rootPanels} />
-          </div>
-          <div className='buttonCommander'>
-            {count >= 1 ? <div className='sendButton'><h2>Commander</h2></div> : null}
-          </div>
-          <div className='affichagePrix'>
-            <div>
-              <h3>Total</h3>
+        <div className="mainContainer">
+            <Header title={t('order').toUpperCase()} />
+            <div className="bodyContainer">
+                <Accordion defaultActiveIndex={-1} panels={rootPanels} />
             </div>
-            <div>
-              {count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}
+            <div className="buttonCommander">
+                {count >= 1 ? (
+                    <div className="sendButton">
+                        <h2>Commander</h2>
+                    </div>
+                ) : null}
             </div>
-            <div>
-              <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
+            <div className="affichagePrix">
+                <div>
+                    <h3>Total</h3>
+                </div>
+                <div>{count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}</div>
+                <div>
+                    <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
+                </div>
             </div>
-          </div>
-          <Bottom />
-      </div>
+            <Bottom />
+        </div>
     );
-
 }
 
 export default withNamespaces()(Commande);
