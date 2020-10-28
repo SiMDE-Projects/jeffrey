@@ -6,6 +6,7 @@ import './App.css';
 import Accueil from 'pages/accueil/accueil.js';
 import Commande from 'pages/commander/commande.js';
 import Suivi from 'pages/suivre/suivi.js';
+import Settings from 'pages/settings/Settings.js';
 
 function App({ t }) {
     return (
@@ -15,6 +16,7 @@ function App({ t }) {
                     <Route path="/" exact component={Accueil} />
                     <Route path="/order" exact component={Commande} />
                     <Route path="/track" exact component={Suivi} />
+                    <Route path="/settings" exact component={Settings} />
                 </Switch>
             </React.Suspense>
         </BrowserRouter>

@@ -1,0 +1,28 @@
+.headerContainer{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #03224C;
+  top: 0;
+  color: #FCFCFC;
+  height: 10vh;
+  width: 100%;
+  z-index: 3
+}
+.goBack{
+  position: absolute;
+  color: #FCFCFC;
+  left: 5%;
+}
+.settings{
+  position: absolute;
+  right: 5%;
+}
+.headerContainer hr{
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  border: 2;
+  border-color: #188CE0;
+  z-index: 10;
+}

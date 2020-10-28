@@ -12,8 +12,8 @@ const Header = ({ title }) => (
         <div>
             <h1>{title}</h1>
         </div>
-        <Link className="settings" to="/">
-            <Icon className="setting" name="setting" size="large" />
+        <Link className="settings" to="/settings">
+            <Icon name="setting" size="large" />
         </Link>
         <hr />
     </div>
