@@ -1,12 +1,38 @@
 import React from 'react';
-
+import { Form, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import Header from 'components/header/header';
+import homeBackground from 'assets/homeJeffrey.svg';
+import './accueil.css';
 
 function Accueil() {
     return (
-        <div className="app">
-            <Header title="Accueil" />
-            <div className="appBody" />
+        <div className="mainContainerHome">
+          <div className='homeBackground'>
+            <h1>JEFFREY</h1>
+          </div>
+          <div className="homeTitle">
+
+          </div>
+          <div className="bodyContainerHome">
+          <Form>
+            <Form.Input
+              icon='user'
+              iconPosition='left'
+              label='Username'
+              placeholder='Username'
+            />
+            <Form.Input
+              icon='lock'
+              iconPosition='left'
+              label='Password'
+              type='password'
+            />
+            <Link to='/order'>
+              <div className="login"><h2>LOGIN</h2></div>
+            </Link>
+          </Form>
+          </div>
         </div>
     );
 }

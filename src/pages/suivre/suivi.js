@@ -18,9 +18,9 @@ function Suivi({ t }) {
     }
 
     return (
-        <div className="mainContainer">
+        <div className="mainContainerTrack">
             <Header title={t('track').toUpperCase()} />
-            <div className="bodyContainer">
+            <div className="bodyContainerTrack">
                 <OrderItem percent={40} etat="En attente de récupération..." />
             </div>
             <Bottom />
