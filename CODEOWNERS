@@ -1,0 +1,10 @@
+jsconfig.json		@cesar-richard
+package.json		@cesar-richard
+.git*				@cesar-richard
+LICENCE				@cesar-richard
+prettier.config.js	@cesar-richard
+.travis.yml			@cesar-richard
+.eslint*			@cesar-richard
+yarn.lock			@cesar-richard
+/public				@cesar-richard
+/src/*				@SiMDE-Projects/Jeffrey	@cesar-richard
