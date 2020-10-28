@@ -7,4 +7,4 @@ prettier.config.js	@cesar-richard
 .eslint*			@cesar-richard
 yarn.lock			@cesar-richard
 /public				@cesar-richard
-/src/*				@SiMDE-Projects/jeffrey	@cesar-richard
+/src/*				@SiMDE-Projects/Jeffrey	@cesar-richard
