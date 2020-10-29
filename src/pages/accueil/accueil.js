@@ -19,7 +19,7 @@ function Accueil() {
             <Form.Input
               icon='user'
               iconPosition='left'
-              label='Username'
+              label='Username - CAS'
               placeholder='Username'
             />
             <Form.Input
@@ -28,10 +28,10 @@ function Accueil() {
               label='Password'
               type='password'
             />
-            <Link to='/order'>
-              <div className="login"><h2>LOGIN</h2></div>
-            </Link>
           </Form>
+          <Link to='/order'>
+            <div className="login"><h2>LOGIN</h2></div>
+          </Link>
           </div>
         </div>
     );
