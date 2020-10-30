@@ -1,17 +1,20 @@
-.mainContainer{
+.mainContainerOrder{
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
+  background-color: #FCFCFC;
 }
 
-.bodyContainer{
+.bodyContainerOrder{
   display: flex;
   min-height: 80vh;
   flex-direction: column;
+  margin-top: 10vh;
+  width: 100%;
   position: absolute;
   padding-top: 2vh;
-  padding-bottom: 12.5vh;
+  padding-bottom: 22.5vh;
   align-items: center;
   background-color: #FCFCFC;
 }
