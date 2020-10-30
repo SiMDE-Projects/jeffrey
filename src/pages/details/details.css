@@ -15,3 +15,8 @@
   margin-bottom: 10vh;
   background-color: #FCFCFC;
 }
+.goBack{
+  position: absolute;
+  color: #FCFCFC;
+  left: 5%;
+}
