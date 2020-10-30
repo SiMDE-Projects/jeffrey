@@ -11,22 +11,6 @@ import TotalContext from 'context/total-context';
 function App({ t }) {
     const [order, setOrder] = useState([]);
 
-    function handleOrder1(id, prix) {
-        const tmp = Object.assign([],order);
-        var arret = true;
-        order.map((item, i) => {
-            if (item.id === id) {
-                item.count += 1;
-                arret = false;
-            }
-            return item;
-        });
-        if (arret) {
-            tmp.push({ id: id, prix: prix, count: 1 });
-        }
-        setOrder(tmp);
-    }
-
     function handleOrder(id, prix) {
         const tmp = Object.assign([],order);
         const index = tmp.findIndex(item => item.id === id);

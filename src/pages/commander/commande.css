@@ -14,7 +14,7 @@
   width: 100%;
   position: absolute;
   padding-top: 2vh;
-  padding-bottom: 22.5vh;
+  padding-bottom: 24vh;
   align-items: center;
   background-color: #FCFCFC;
 }
@@ -36,7 +36,7 @@
   width: 100%;
   bottom: 17.5vh;
   background-color: #FCFCFC;
-  height: 5vh;
+  height: 6vh;
   align-items: center;
   justify-content: center;
   flex-direction: row;
