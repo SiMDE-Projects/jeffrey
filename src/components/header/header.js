@@ -9,7 +9,7 @@ const Header = ({ title }) => (
         <Link className="logout" to="/">
             <Icon name="log out" size="big" />
         </Link>
-        <div className='title'>
+        <div className="title">
             <h1>{title}</h1>
         </div>
         <Link className="settings" to="/">
