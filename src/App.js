@@ -9,12 +9,10 @@ import Suivi from 'pages/suivre/suivi';
 import TotalContext from 'context/total-context';
 
 function App({ t }) {
-    const [total, setTotal] = useState(0);
-    const [count, setCount] = useState(0);
     const [order, setOrder] = useState([]);
 
-    function handleOrder(id) {
-        const tmp = order;
+    function handleOrder1(id, prix) {
+        const tmp = Object.assign([],order);
         var arret = true;
         order.map((item, i) => {
             if (item.id === id) {
@@ -24,21 +22,28 @@ function App({ t }) {
             return item;
         });
         if (arret) {
-            tmp.push({ id: id, count: 1 });
+            tmp.push({ id: id, prix: prix, count: 1 });
         }
         setOrder(tmp);
     }
 
-    function handleTotal(prix) {
-        setTotal(total + prix);
-        setCount(count + 1);
+    function handleOrder(id, prix) {
+        const tmp = Object.assign([],order);
+        const index = tmp.findIndex(item => item.id === id);
+        if (index !== -1){
+          tmp[index].count += 1;
+        }
+        else {
+          tmp.push({ id: id, prix: prix, count: 1 });
+        }
+        setOrder(tmp);
     }
 
     return (
         <BrowserRouter>
             <React.Suspense fallback={<div>{t('loading')}</div>}>
                 <Switch>
-                    <TotalContext.Provider value={{ count, total, order, handleOrder, handleTotal }}>
+                    <TotalContext.Provider value={{ order, handleOrder }}>
                         <Route path="/" exact component={Accueil} />
                         <Route path="/order" exact component={Commande} />
                         <Route path="/track" exact component={Suivi} />

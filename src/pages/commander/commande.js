@@ -14,7 +14,14 @@ import TotalContext from 'context/total-context';
 const product_data = data.Product;
 
 function Commande({ t }) {
-    const { count, total } = useContext(TotalContext);
+    const { order } = useContext(TotalContext);
+
+    const value = order.reduce(function(acc, cur){
+      return({price: acc.price + cur.prix * cur.count, qty: acc.qty + cur.count});
+    }, {price: 0, qty: 0});
+
+    const total = value.price;
+    const count = value.qty;
 
     const rootPanels = product_data.map((item, i) =>
         i % 2 === 0

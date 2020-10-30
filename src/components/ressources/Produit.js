@@ -3,7 +3,7 @@ import TotalContext from 'context/total-context';
 import './css/item.css';
 
 export default function({ prix, titre, id }) {
-    const { handleTotal, handleOrder, order } = useContext(TotalContext);
+    const { handleOrder, order } = useContext(TotalContext);
 
     const value = order.find(x => x.id === id);
 
@@ -13,11 +13,10 @@ export default function({ prix, titre, id }) {
             <div
                 className="produit"
                 onClick={() => {
-                    handleTotal(prix);
-                    handleOrder(id);
+                    handleOrder(id, prix);
                 }}
             >
-                <h1>{value ? value.count : 0}</h1>
+                <h1>{value ? value.count : null}</h1>
             </div>
         </div>
     );
