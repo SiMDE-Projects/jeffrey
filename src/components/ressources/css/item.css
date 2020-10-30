@@ -11,6 +11,7 @@
   margin-top: -2vh;
   border: solid 1px;
   background-color: #FCFCFC;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .rightItem h1, .leftItem h1{
   padding-top: 1vh;
@@ -31,8 +32,9 @@
   border-right: solid 1px;
   border-bottom: solid 1px;
   border-left: solid 1px;
+  border-top: solid 1px;
   background-color: #FCFCFC;
-  border-color: black;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .rightContent{
   border-color: #03224C;
