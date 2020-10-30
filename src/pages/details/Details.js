@@ -9,8 +9,11 @@ function Details({ t }) {
 
     return (
         <div className='mainContainerDetails'>
-          <div className='goBack'>
-            <Icon name="angle left" size="big" onClick={() => history.goBack()} />
+          <div className='headerContainer'>
+            <div className='goBack'>
+              <Icon name="angle left" size="big" onClick={() => history.goBack()} />
+            </div>
+            
           </div>
           <div className='bodyContainerDetails'>
           </div>
