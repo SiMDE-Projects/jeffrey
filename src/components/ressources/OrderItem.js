@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress, Icon } from 'semantic-ui-react';
+import { Progress } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 import './css/item.css';

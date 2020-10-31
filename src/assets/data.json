@@ -94,6 +94,8 @@
   "orderDetails": [
     {
       "id": "1433",
+      "percent": 40,
+      "etat": "En préparation...",
       "details" : [
         {
           "id": "11",
