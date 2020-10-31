@@ -1,8 +1,6 @@
-import React from 'react';
+import { createContext } from 'react';
 
-export const TotalContext = React.createContext({
-    total: 0,
-    handleTotal: () => {}
+export default createContext({
+    order: [],
+    handleOrder: () => {}
 });
-
-export default TotalContext;

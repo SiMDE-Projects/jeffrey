@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { withNamespaces } from 'react-i18next';
 import { Accordion } from 'semantic-ui-react';
 import './commande.css';
@@ -14,13 +14,17 @@ import TotalContext from 'context/total-context';
 const product_data = data.Product;
 
 function Commande({ t }) {
-    const [total, setTotal] = useState(0);
-    const [count, setCount] = useState(0);
+    const { order } = useContext(TotalContext);
 
-    function handleTotal(prix) {
-        setTotal(total + prix);
-        setCount(count + 1);
-    }
+    const value = order.reduce(
+        function(acc, cur) {
+            return { price: acc.price + cur.prix * cur.count, qty: acc.qty + cur.count };
+        },
+        { price: 0, qty: 0 }
+    );
+
+    const total = value.price;
+    const count = value.qty;
 
     const rootPanels = product_data.map((item, i) =>
         i % 2 === 0
@@ -37,30 +41,28 @@ function Commande({ t }) {
     );
 
     return (
-        <div className="mainContainer">
-            <TotalContext.Provider value={{ total, handleTotal }}>
-                <Header title={t('order').toUpperCase()} />
-                <div className="bodyContainer">
-                    <Accordion defaultActiveIndex={-1} panels={rootPanels} />
-                </div>
+        <div className="mainContainerOrder">
+            <Header title={t('order').toUpperCase()} />
+            <div className="bodyContainerOrder">
+                <Accordion defaultActiveIndex={-1} panels={rootPanels} />
+            </div>
+            {count >= 1 ? (
                 <div className="buttonCommander">
-                    {count >= 1 ? (
-                        <div className="sendButton">
-                            <h2>Commander</h2>
-                        </div>
-                    ) : null}
-                </div>
-                <div className="affichagePrix">
-                    <div>
-                        <h3>Total</h3>
-                    </div>
-                    <div>{count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}</div>
-                    <div>
-                        <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
+                    <div className="sendButton">
+                        <h2>Commander</h2>
                     </div>
                 </div>
-                <Bottom />
-            </TotalContext.Provider>
+            ) : null}
+            <div className="affichagePrix">
+                <div>
+                    <h3>Total</h3>
+                </div>
+                <div>{count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}</div>
+                <div>
+                    <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
+                </div>
+            </div>
+            <Bottom />
         </div>
     );
 }

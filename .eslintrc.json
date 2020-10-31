@@ -26,9 +26,7 @@
             "files": ["*.js"],
             "rules": {
                 "react/display-name": [0, { "ignoreTranspilerName": false }],
-                "react/prop-types": "off",
-                "import/no-unresolved": "off",
-                "no-unused-vars": "warn"
+                "react/prop-types": "off"
             }
         }
     ],

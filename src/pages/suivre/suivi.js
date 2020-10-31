@@ -9,9 +9,8 @@ import OrderItem from 'components/ressources/OrderItem';
 const order_data = data.Order;
 
 function Suivi({ t }) {
-    console.log(order_data);
     return (
-        <div className="mainContainer">
+        <div className="mainContainerTrack">
             <Header title={t('track').toUpperCase()} />
             <div className="bodyContainer">
                 {order_data.map(item => (
