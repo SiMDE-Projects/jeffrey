@@ -35,17 +35,25 @@ function Details({ t }) {
           {found ?
             <div className='detailsContainer'>
             {found.details.map( item =>
-              <div>
-                {item.count} x {item.name} = {(item.count * item.prix).toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}
+              <div className='detailsLine'>
+                <div className='detailsText'>
+                  <div><h3>{item.count}</h3></div>
+                  <div>{item.name}</div>
+                  <div><h3>{(item.count * item.prix).toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3></div>
+                </div>
+                <hr/>
               </div>
             )}
-              <div>
-                Total :
+              <div className='detailsTotal'>
+                <div><h3>Total</h3></div>
+                <div><h3>
                 {found.details.reduce(
                   function(acc, cur){
                     return(acc + cur.count * cur.prix)
                   }, 0
                 ).toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}
+                </h3>
+                </div>
               </div>
             </div>
             :
