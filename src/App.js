@@ -13,9 +13,9 @@ function App({ t }) {
 
     function handleOrder(id, prix) {
         const tmp = Object.assign([],order);
-        const index = tmp.findIndex(item => item.id === id);
-        if (index !== -1){
-          tmp[index].count += 1;
+        const found = tmp.find(item => item.id === id);
+        if (found){
+          found.count += 1;
         }
         else {
           tmp.push({ id: id, prix: prix, count: 1 });
