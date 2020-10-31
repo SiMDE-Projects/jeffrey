@@ -12,13 +12,12 @@ function App({ t }) {
     const [order, setOrder] = useState([]);
 
     function handleOrder(id, prix) {
-        const tmp = Object.assign([],order);
+        const tmp = Object.assign([], order);
         const found = tmp.find(item => item.id === id);
-        if (found){
-          found.count += 1;
-        }
-        else {
-          tmp.push({ id: id, prix: prix, count: 1 });
+        if (found) {
+            found.count += 1;
+        } else {
+            tmp.push({ id: id, prix: prix, count: 1 });
         }
         setOrder(tmp);
     }

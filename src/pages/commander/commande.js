@@ -16,9 +16,12 @@ const product_data = data.Product;
 function Commande({ t }) {
     const { order } = useContext(TotalContext);
 
-    const value = order.reduce(function(acc, cur){
-      return({price: acc.price + cur.prix * cur.count, qty: acc.qty + cur.count});
-    }, {price: 0, qty: 0});
+    const value = order.reduce(
+        function(acc, cur) {
+            return { price: acc.price + cur.prix * cur.count, qty: acc.qty + cur.count };
+        },
+        { price: 0, qty: 0 }
+    );
 
     const total = value.price;
     const count = value.qty;
@@ -43,13 +46,13 @@ function Commande({ t }) {
             <div className="bodyContainerOrder">
                 <Accordion defaultActiveIndex={-1} panels={rootPanels} />
             </div>
-            <div className="buttonCommander">
-                {count >= 1 ? (
+            {count >= 1 ? (
+                <div className="buttonCommander">
                     <div className="sendButton">
                         <h2>Commander</h2>
                     </div>
-                ) : null}
-            </div>
+                </div>
+            ) : null}
             <div className="affichagePrix">
                 <div>
                     <h3>Total</h3>

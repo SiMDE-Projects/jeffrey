@@ -9,7 +9,9 @@ export default function({ prix, titre, id }) {
 
     return (
         <div className="productContainer">
-            <h3>{titre}</h3>
+            <div className="productTitle">
+                <h3>{titre}</h3>
+            </div>
             <div
                 className="produit"
                 onClick={() => {
@@ -17,6 +19,9 @@ export default function({ prix, titre, id }) {
                 }}
             >
                 <h1>{value ? value.count : null}</h1>
+            </div>
+            <div className="productPrice">
+                <h4>{prix.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h4>
             </div>
         </div>
     );
