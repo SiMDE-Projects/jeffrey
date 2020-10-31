@@ -29,6 +29,7 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: -3.5vh;
+  padding-top: 1vh;
   border-right: solid 1px;
   border-bottom: solid 1px;
   border-left: solid 1px;
@@ -38,10 +39,11 @@
 }
 .rightContent{
   border-color: #03224C;
+  color: #B3001B;
 }
 .leftContent{
   border-color: #B3001B;
-  color: #B3001B;
+  color: #03224C;
 }
 .rightItem{
   border-color: #03224C;
@@ -59,19 +61,71 @@
   border-radius: 100vh;
   height: 10vh;
   width: 10vh;
-  margin: 2vh;
-}
-.productListLeft{
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.productListMidle{
+.productTitle{
+  height: 2.5vh;
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.productListRight{
+.productPrice{
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5vh;
+}
+.produit h1{
+  position: relative;
+  bottom: 0.2vh;
+  font-size: 8vh;
+  opacity: 25%;
+}
+.productList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1vh;
+  padding-top: 1vh;
+}
+.productContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  margin-bottom: 2vh;
+}
+.productContainer h3{
+  text-align: center;
+  font-family: 'Studio Neon';
+  font-weight: lighter;
+  max-width: 80%;
+  font-size: 0.70rem;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-bottom: 0;
+  margin-top: 1vh;
+}
+.productContainer h4{
+  text-align: center;
+  font-family: 'Studio Neon';
+  font-weight: lighter;
+  max-width: 80%;
+  font-size: 1rem;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-bottom: 1vh;
+  margin-top: -1vh;
 }
 
 /* BottomItem.js */

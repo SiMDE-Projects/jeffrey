@@ -5,9 +5,7 @@ import './css/item.css';
 
 const RightContent = ({ produits }) => (
     <div className="rightContent">
-        <div className="productListLeft">{produits.map((item, i) => (i % 3 === 0 ? <Produit key={item.id} prix={item.prix} /> : null))}</div>
-        <div className="productListMiddle">{produits.map((item, i) => (i % 3 === 1 ? <Produit key={item.id} prix={item.prix} /> : null))}</div>
-        <div className="productListRight">{produits.map((item, i) => (i % 3 === 2 ? <Produit key={item.id} prix={item.prix} /> : null))}</div>
+        <div className="productList">{produits.map((item, i) => (<Produit key={item.id} titre={item.title} prix={item.prix} id={item.id} />: null))}</div>
     </div>
 );
 
