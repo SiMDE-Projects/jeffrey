@@ -12,7 +12,7 @@ function Suivi({ t }) {
     return (
         <div className="mainContainerTrack">
             <Header title={t('track').toUpperCase()} />
-            <div className="bodyContainer">
+            <div className="bodyContainerTrack">
                 {order_data.map(item => (
                     <OrderItem key={item.id} percent={item.percent} num={item.id} etat={item.etat} />
                 ))}
