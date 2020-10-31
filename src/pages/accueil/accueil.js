@@ -1,8 +1,6 @@
 import React from 'react';
-import { Form, Button } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import Header from 'components/header/header';
-import homeBackground from 'assets/homeJeffrey.svg';
 import './accueil.css';
 
 function Accueil() {
