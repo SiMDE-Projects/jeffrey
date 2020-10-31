@@ -14,9 +14,9 @@ function Suivi({ t }) {
         <div className="mainContainer">
             <Header title={t('track').toUpperCase()} />
             <div className="bodyContainer">
-              {order_data.map( item =>
-                <OrderItem percent={item.percent} num={item.id} etat={item.etat} />
-              )}
+                {order_data.map(item => (
+                    <OrderItem key={item.id} percent={item.percent} num={item.id} etat={item.etat} />
+                ))}
             </div>
             <Bottom />
         </div>

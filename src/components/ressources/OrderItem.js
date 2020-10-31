@@ -5,9 +5,8 @@ import { withNamespaces } from 'react-i18next';
 import './css/item.css';
 
 const OrderItem = ({ t, num, percent, etat }) => {
-
     return (
-        <Link to={'/orderDetails?id='+num} className="orderItem">
+        <Link to={'/orderDetails?id=' + num} className="orderItem">
             <h3>
                 {t('order n°')} {num}
             </h3>

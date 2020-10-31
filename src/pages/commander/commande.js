@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { withNamespaces } from 'react-i18next';
-import { Accordion, Button } from 'semantic-ui-react';
+import { Accordion } from 'semantic-ui-react';
 import './commande.css';
 import data from 'assets/data.json';
 import Header from 'components/header/header';
