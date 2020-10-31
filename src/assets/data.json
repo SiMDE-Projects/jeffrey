@@ -78,5 +78,36 @@
         }
       ]
     }
+  ],
+  "Order": [
+    {
+      "id": "1433",
+      "percent": 40,
+      "etat": "En préparation..."
+    },
+    {
+      "id": "1456",
+      "percent":80,
+      "etat": "En attente de récupération..."
+    }
+  ],
+  "orderDetails": [
+    {
+      "id": "1433",
+      "details" : [
+        {
+          "id": "11",
+          "name" : "Delirium Tremens",
+          "prix" : 2.5,
+          "count": 3
+        },
+        {
+          "id": "12",
+          "name" : "Barbar Blonde",
+          "prix" : 3,
+          "count": 2
+        }
+      ]
+    }
   ]
 }

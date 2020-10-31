@@ -10,6 +10,7 @@
   min-height: 80vh;
   flex-direction: column;
   position: relative;
+  align-items: center;
   margin-top: 10vh;
   padding-top: 2vh;
   margin-bottom: 10vh;
@@ -38,4 +39,16 @@
   border: 2;
   border-color: #188CE0;
   z-index: 10;
+}
+.detailsContainer{
+  width: 80%;
+  border: solid 1px;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2vh;
+  align-items: center;
+  padding-top: 1vh;
+  background-color: #FCFCFC;
 }
