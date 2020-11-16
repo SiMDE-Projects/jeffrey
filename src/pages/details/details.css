@@ -1,0 +1,114 @@
+.mainContainerDetails{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.bodyContainerDetails{
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: 10vh;
+  padding-top: 2vh;
+  margin-bottom: 10vh;
+  background-color: #FCFCFC;
+}
+.goBack{
+  position: absolute;
+  color: #FCFCFC;
+  left: 5%;
+}
+.headerContainer{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #03224C;
+  top: 0;
+  color: #FCFCFC;
+  height: 10vh;
+  width: 100%;
+  z-index: 3
+}
+.headerContainer hr{
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  border: 2;
+  border-color: #188CE0;
+  z-index: 10;
+}
+.detailsContainer{
+  width: 80%;
+  border: solid 1px;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1vh;
+  align-items: center;
+  padding-top: 1vh;
+  background-color: #FCFCFC;
+  color: #4183c4;
+}
+.detailsLine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+.detailsLine hr{
+  width: 90%;
+}
+.detailsText{
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.detailsTotal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 1vh;
+}
+.detailsText h2{
+  font-family: "Studio Neon";
+  font-weight: lighter;
+  font-size: 1.25rem;
+  padding-top: 0.25vh;
+}
+.buttonDelete{
+  width: 100%;
+  background-color: #FCFCFC;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2vh;
+  display: flex;
+}
+.deleteButton{
+  height: 5vh;
+  width: 50vw;
+  border: solid 1px;
+  border-color: #03224C;
+  border-radius: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deleteButton h2{
+  padding-top: 1vh;
+  font-family: 'Studio Neon';
+  font-weight: lighter;
+}

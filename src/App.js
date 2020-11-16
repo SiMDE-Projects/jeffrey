@@ -6,6 +6,7 @@ import './App.css';
 import Accueil from 'pages/accueil/accueil';
 import Commande from 'pages/commander/commande';
 import Suivi from 'pages/suivre/suivi';
+import Details from 'pages/details/Details';
 import TotalContext from 'context/total-context';
 
 function App({ t }) {
@@ -30,6 +31,7 @@ function App({ t }) {
                         <Route path="/" exact component={Accueil} />
                         <Route path="/order" exact component={Commande} />
                         <Route path="/track" exact component={Suivi} />
+                        <Route path="/orderDetails" exact component={Details} />
                     </TotalContext.Provider>
                 </Switch>
             </React.Suspense>
