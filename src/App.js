@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 import './App.css';
-import Accueil from 'pages/accueil/accueil';
-import Commande from 'pages/commander/commande';
-import Suivi from 'pages/suivre/suivi';
-import Details from 'pages/details/Details';
+import Accueil from 'pages/home';
+import Commande from 'pages/order';
+import Suivi from 'pages/track';
+import Details from 'pages/details';
 import TotalContext from 'context/total-context';
 
 function App({ t }) {
