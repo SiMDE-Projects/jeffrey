@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: 'Prepare i18next script'
+      # - name: 'Prepare i18next script'
       - name: 'Check keys'
         run: node ./.github/actions/translations.js --github
 #         env:
