@@ -105,7 +105,7 @@ const github_check_run = (params) => {
 
 	let data = {
 		...params,
-		name: 'i18n-weez-check',
+		name: 'Check i18next keys in fr-FR',
 		head_sha: SHA,
 		completed_at: (new Date()).toISOString(),
 	};
