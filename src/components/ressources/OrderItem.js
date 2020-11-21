@@ -1,10 +1,12 @@
 import React from 'react';
 import { Progress } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import './css/item.css';
 
-const OrderItem = ({ t, num, percent, etat }) => {
+const OrderItem = ({ num, percent, etat }) => {
+    const { t } = useTranslation();
+
     return (
         <Link to={'/orderDetails?id=' + num} className="orderItem">
             <h3>
@@ -16,4 +18,4 @@ const OrderItem = ({ t, num, percent, etat }) => {
     );
 };
 
-export default withNamespaces()(OrderItem);
+export default OrderItem;

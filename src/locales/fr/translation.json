@@ -1,6 +1,8 @@
 {
-  "track": "Suivre",
-  "order": "Commander",
   "loading": "Chargement",
-  "order n°": "Commande n°"
+  "order": "Commander",
+  "order n°": "Commande n°",
+  "product": "article",
+  "product_plural": "articles",
+  "track": "Suivre"
 }

@@ -59,15 +59,9 @@ export default function() {
                     <h3>Total</h3>
                 </div>
                 <div>
-                    {count >= 2 ? (
-                        <h3>
-                            {count} {t('product_plural')}
-                        </h3>
-                    ) : (
-                        <h3>
-                            {count} {t('product_singular')}
-                        </h3>
-                    )}
+                    <h3>
+                        {count} {t('product', { count })}
+                    </h3>
                 </div>
                 <div>
                     <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>

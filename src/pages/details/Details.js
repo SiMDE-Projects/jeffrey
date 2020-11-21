@@ -3,12 +3,13 @@ import { useHistory, useLocation } from 'react-router-dom';
 import data from 'assets/data.json';
 import { Progress, Icon } from 'semantic-ui-react';
 import './details.css';
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const details_data = data.orderDetails;
 
-function Details({ t }) {
-    let history = useHistory();
+function Details() {
+    const history = useHistory();
+    const { t } = useTranslation();
 
     function useQuery() {
         return new URLSearchParams(useLocation().search);
@@ -82,4 +83,4 @@ function Details({ t }) {
     );
 }
 
-export default withNamespaces()(Details);
+export default Details;
