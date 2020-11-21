@@ -15,5 +15,5 @@ jobs:
         run: yarn
       - name: 'Check keys'
         run: node ./.github/actions/translations.js --github
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
