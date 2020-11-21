@@ -56,7 +56,7 @@ export default function() {
             ) : null}
             <div className="affichagePrix">
                 <div>
-                    <h3>Total</h3>
+                    <h3>{t('total')}</h3>
                 </div>
                 <div>
                     <h3>

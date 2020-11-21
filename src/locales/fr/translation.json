@@ -1,8 +1,11 @@
 {
+  "delete": "Supprimer",
+  "error": "Erreur",
   "loading": "Chargement",
   "order": "Commander",
-  "order n°": "Commande n°",
+  "orderNumber": "Commande n°",
   "product": "article",
   "product_plural": "articles",
+  "total": "Total",
   "track": "Suivre"
 }

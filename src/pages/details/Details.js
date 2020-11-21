@@ -35,7 +35,7 @@ function Details() {
                 {found ? (
                     <div className="detailsContainer">
                         <h3>
-                            {t('order n°')} {found.id}
+                            {t('orderNumber')} {found.id}
                         </h3>
                         <h4>{t(found.etat)}</h4>
                         <Progress className="progressBar" percent={found.percent} size="tiny" indicating />
@@ -57,7 +57,7 @@ function Details() {
                         ))}
                         <div className="detailsTotal">
                             <div>
-                                <h3>Total</h3>
+                                <h3>{t('total')}</h3>
                             </div>
                             <div>
                                 <h3>
@@ -71,11 +71,11 @@ function Details() {
                         </div>
                     </div>
                 ) : (
-                    <div>Erreur</div>
+                    <div>{t('error')}</div>
                 )}
                 <div className="buttonDelete">
                     <div className="deleteButton">
-                        <h2>Supprimer</h2>
+                        <h2>{t('delete')}</h2>
                     </div>
                 </div>
             </div>
