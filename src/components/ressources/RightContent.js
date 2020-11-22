@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Produit from 'components/ressources/Produit.js';
+import Produit from 'components/ressources/Product.js';
 import './css/item.css';
 
 const RightContent = ({ produits }) => (
