@@ -3,7 +3,7 @@ import { Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './accueil.css';
 
-function Accueil() {
+export default function() {
     return (
         <div className="mainContainerHome">
             <div className="homeBackground">
@@ -24,5 +24,3 @@ function Accueil() {
         </div>
     );
 }
-
-export default Accueil;

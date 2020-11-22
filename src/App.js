@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 import './App.css';
-import Accueil from 'pages/accueil/accueil';
-import Commande from 'pages/commander/commande';
-import Suivi from 'pages/suivre/suivi';
-import Details from 'pages/details/Details';
+import Home from 'pages/home';
+import Order from 'pages/order';
+import Track from 'pages/track';
+import Details from 'pages/details';
 import TotalContext from 'context/total-context';
 
 function App({ t }) {
@@ -18,7 +18,7 @@ function App({ t }) {
         if (found) {
             found.count += 1;
         } else {
-            tmp.push({ id: id, prix: prix, count: 1 });
+            tmp.push({ id, prix, count: 1 });
         }
         setOrder(tmp);
     }
@@ -28,9 +28,9 @@ function App({ t }) {
             <React.Suspense fallback={<div>{t('loading')}</div>}>
                 <Switch>
                     <TotalContext.Provider value={{ order, handleOrder }}>
-                        <Route path="/" exact component={Accueil} />
-                        <Route path="/order" exact component={Commande} />
-                        <Route path="/track" exact component={Suivi} />
+                        <Route path="/" exact component={Home} />
+                        <Route path="/order" exact component={Order} />
+                        <Route path="/track" exact component={Track} />
                         <Route path="/orderDetails" exact component={Details} />
                     </TotalContext.Provider>
                 </Switch>
