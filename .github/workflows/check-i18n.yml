@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: 'Prepare i18next script'
-        run: yarn
+        run: npm i fishingrod
       - name: 'Check keys'
         run: node ./.github/actions/translations.js --github
         env:
