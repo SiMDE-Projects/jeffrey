@@ -1,14 +1,16 @@
 import React from 'react';
 import './suivi.css';
 import data from 'assets/data.json';
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import Header from 'components/header/header';
 import Bottom from 'components/bottom-tab-bar/bottom-tab-bar';
 import OrderItem from 'components/ressources/OrderItem';
 
 const order_data = data.Order;
 
-function Suivi({ t }) {
+function Suivi() {
+    const { t } = useTranslation();
+
     return (
         <div className="mainContainerTrack">
             <Header title={t('track').toUpperCase()} />
@@ -22,4 +24,4 @@ function Suivi({ t }) {
     );
 }
 
-export default withNamespaces()(Suivi);
+export default Suivi;

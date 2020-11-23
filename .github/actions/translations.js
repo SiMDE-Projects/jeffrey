@@ -8,7 +8,7 @@ const READ_LOCALES = ['fr']; // Could be set via variable
 const LOCALES = {};
 
 const get_locale_path = (locale, read=true) => {
-	return `${read ? '../../' : './'}src/locales/${locale}/index.json`;
+	return `${read ? '../../' : './'}src/locales/${locale}/translation.json`;
 };
 
 for(let locale of READ_LOCALES) {
@@ -17,9 +17,10 @@ for(let locale of READ_LOCALES) {
 }
 
 const get_lines_with_keys = () => {
-	let regexes = [`t\\([\\"']([a-zA-Z_0-9.]+)['\\"](\\,|\\))`, `i18nKey=[\\"']([a-zA-Z_0-9.]+)['\\"]`];
+	let regexes = [`t\\([\\"']([a-zA-Z_0-9.]+)['\\"](\\,|\\))`];
+	//, `i18nKey=[\\"']([a-zA-Z_0-9.]+)['\\"]`
 	let commands = regexes.map(regex => {
-		return `grep -n --recursive --only-matching --extended-regexp --word-regexp "${regex}" --include "*.js" --include "*.jsx" src`;
+		return `grep -n --recursive --only-matching --extended-regexp --word-regexp "${regex}" --include "*.js" src`;
 	});
 
 	return new Promise(resolve => {
@@ -104,7 +105,7 @@ const github_check_run = (params) => {
 
 	let data = {
 		...params,
-		name: 'i18n-weez-check',
+		name: 'Check i18next keys in fr-FR',
 		head_sha: SHA,
 		completed_at: (new Date()).toISOString(),
 	};

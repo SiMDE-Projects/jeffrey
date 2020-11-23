@@ -3,12 +3,13 @@ import { useHistory, useLocation } from 'react-router-dom';
 import data from 'assets/data.json';
 import { Progress, Icon } from 'semantic-ui-react';
 import './details.css';
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const details_data = data.orderDetails;
 
-function Details({ t }) {
-    let history = useHistory();
+function Details() {
+    const history = useHistory();
+    const { t } = useTranslation();
 
     function useQuery() {
         return new URLSearchParams(useLocation().search);
@@ -34,7 +35,7 @@ function Details({ t }) {
                 {found ? (
                     <div className="detailsContainer">
                         <h3>
-                            {t('order n°')} {found.id}
+                            {t('orderNumber')} {found.id}
                         </h3>
                         <h4>{t(found.etat)}</h4>
                         <Progress className="progressBar" percent={found.percent} size="tiny" indicating />
@@ -56,7 +57,7 @@ function Details({ t }) {
                         ))}
                         <div className="detailsTotal">
                             <div>
-                                <h3>Total</h3>
+                                <h3>{t('total')}</h3>
                             </div>
                             <div>
                                 <h3>
@@ -70,11 +71,11 @@ function Details({ t }) {
                         </div>
                     </div>
                 ) : (
-                    <div>Erreur</div>
+                    <div>{t('error')}</div>
                 )}
                 <div className="buttonDelete">
                     <div className="deleteButton">
-                        <h2>Supprimer</h2>
+                        <h2>{t('delete')}</h2>
                     </div>
                 </div>
             </div>
@@ -82,4 +83,4 @@ function Details({ t }) {
     );
 }
 
-export default withNamespaces()(Details);
+export default Details;

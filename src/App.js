@@ -1,7 +1,7 @@
 import { hot } from 'react-hot-loader/root';
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import './App.css';
 import Home from 'pages/home';
 import Order from 'pages/order';
@@ -9,8 +9,9 @@ import Track from 'pages/track';
 import Details from 'pages/details';
 import TotalContext from 'context/total-context';
 
-function App({ t }) {
+function App() {
     const [order, setOrder] = useState([]);
+    const { t } = useTranslation();
 
     function handleOrder(id, prix) {
         const tmp = Object.assign([], order);
@@ -39,4 +40,4 @@ function App({ t }) {
     );
 }
 
-export default withNamespaces()(process.env.NODE_ENV === 'development' ? hot(App) : App);
+export default process.env.NODE_ENV === 'development' ? hot(App) : App;

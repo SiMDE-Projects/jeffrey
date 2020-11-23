@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { Accordion } from 'semantic-ui-react';
 import './commande.css';
 import data from 'assets/data.json';
@@ -13,8 +13,9 @@ import TotalContext from 'context/total-context';
 
 const product_data = data.Product;
 
-function Commande({ t }) {
+export default function() {
     const { order } = useContext(TotalContext);
+    const { t } = useTranslation();
 
     const value = order.reduce(
         function(acc, cur) {
@@ -49,15 +50,19 @@ function Commande({ t }) {
             {count >= 1 ? (
                 <div className="buttonCommander">
                     <div className="sendButton">
-                        <h2>Commander</h2>
+                        <h2>{t('order')}</h2>
                     </div>
                 </div>
             ) : null}
             <div className="affichagePrix">
                 <div>
-                    <h3>Total</h3>
+                    <h3>{t('total')}</h3>
                 </div>
-                <div>{count >= 2 ? <h3>{count} articles</h3> : <h3>{count} article</h3>}</div>
+                <div>
+                    <h3>
+                        {count} {t('product', { count })}
+                    </h3>
+                </div>
                 <div>
                     <h3>{total.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}</h3>
                 </div>
@@ -66,5 +71,3 @@ function Commande({ t }) {
         </div>
     );
 }
-
-export default withNamespaces()(Commande);
