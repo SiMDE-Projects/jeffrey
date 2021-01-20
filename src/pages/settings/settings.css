@@ -26,3 +26,7 @@
   border-color: #188CE0;
   z-index: 10;
 }
+.title h1{
+  font-family: 'Market Deco';
+  font-weight: lighter;
+}

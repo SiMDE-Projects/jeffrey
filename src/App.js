@@ -6,7 +6,7 @@ import './App.css';
 import Home from 'pages/home';
 import Order from 'pages/order';
 import Track from 'pages/track';
-import Settings from 'pages/settings/Settings.js';
+import Settings from 'pages/settings';
 import Details from 'pages/details';
 import TotalContext from 'context/total-context';
 
