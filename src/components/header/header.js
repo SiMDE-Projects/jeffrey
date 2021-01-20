@@ -7,13 +7,13 @@ import './header.css';
 const Header = ({ title }) => (
     <div className="headerContainer">
         <Link className="logout" to="/">
-            <Icon name="log out" size="large" />
+            <Icon name="log out" size="big" />
         </Link>
-        <div>
+        <div className="title">
             <h1>{title}</h1>
         </div>
         <Link className="settings" to="/settings">
-            <Icon name="setting" size="large" />
+            <Icon className="setting" name="setting" size="big" />
         </Link>
         <hr />
     </div>

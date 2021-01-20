@@ -1,6 +1,11 @@
 {
-  "track": "Suivre",
-  "order": "Commander",
+  "delete": "Supprimer",
+  "error": "Erreur",
   "loading": "Chargement",
-  "order n°": "Commande n°"
+  "order": "Commander",
+  "orderNumber": "Commande n°",
+  "product": "article",
+  "product_plural": "articles",
+  "total": "Total",
+  "track": "Suivre"
 }

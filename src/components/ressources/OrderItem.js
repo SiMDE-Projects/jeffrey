@@ -1,18 +1,21 @@
 import React from 'react';
 import { Progress } from 'semantic-ui-react';
-import { withNamespaces } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './css/item.css';
 
-const OrderItem = ({ t, num, percent, etat }) => {
+const OrderItem = ({ num, percent, etat }) => {
+    const { t } = useTranslation();
+
     return (
-        <div className="orderItem">
+        <Link to={'/orderDetails?id=' + num} className="orderItem">
             <h3>
                 {t('order n°')} {num}
             </h3>
+            <h4>{t(etat)}</h4>
             <Progress className="progressBar" percent={percent} size="tiny" indicating />
-            <h3>{t(etat)}</h3>
-        </div>
+        </Link>
     );
 };
 
-export default withNamespaces()(OrderItem);
+export default OrderItem;

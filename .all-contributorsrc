@@ -26,8 +26,8 @@
         "userTesting",
         "design"
       ]
-     },
-     {
+    },
+    {
       "login": "cesar-richard",
       "name": "César Richard",
       "avatar_url": "https://avatars0.githubusercontent.com/u/5199868?v=4",
@@ -41,11 +41,23 @@
         "content",
         "business"
       ]
+    },
+    {
+      "login": "noeamiot",
+      "name": "Noé AMIOT",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/25272468?v=4",
+      "profile": "https://github.com/noeamiot",
+      "contributions": [
+        "review",
+        "userTesting",
+        "doc",
+        "projectManagement"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "uberbeer",
-  "projectOwner": "cesar-richard",
+  "projectName": "jeffrey",
+  "projectOwner": "SiMDE-Projects",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true

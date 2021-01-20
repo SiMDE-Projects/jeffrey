@@ -1,16 +1,20 @@
-.mainContainer{
+.mainContainerOrder{
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
+  background-color: #FCFCFC;
 }
 
-.bodyContainer{
+.bodyContainerOrder{
   display: flex;
   min-height: 80vh;
   flex-direction: column;
+  margin-top: 10vh;
+  width: 100%;
   position: absolute;
   padding-top: 2vh;
+  padding-bottom: 24vh;
   align-items: center;
   background-color: #FCFCFC;
 }
@@ -30,9 +34,9 @@
 .buttonCommander{
   position: fixed;
   width: 100%;
-  bottom: 18vh;
+  bottom: 17.5vh;
   background-color: #FCFCFC;
-  height: 5vh;
+  height: 6vh;
   align-items: center;
   justify-content: center;
   flex-direction: row;

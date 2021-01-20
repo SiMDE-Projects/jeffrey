@@ -1,0 +1,10 @@
+jsconfig.json		@SiMDE-Projects/SiMDE
+package.json		@SiMDE-Projects/SiMDE
+.git*				@SiMDE-Projects/SiMDE
+LICENCE				@SiMDE-Projects/SiMDE
+prettier.config.js	@SiMDE-Projects/SiMDE
+.travis.yml			@SiMDE-Projects/SiMDE
+.eslint*			@SiMDE-Projects/SiMDE
+yarn.lock			@SiMDE-Projects/SiMDE
+/public				@SiMDE-Projects/SiMDE
+/src/*				@SiMDE-Projects/Jeffrey	@SiMDE-Projects/SiMDE
