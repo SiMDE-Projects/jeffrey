@@ -76,6 +76,12 @@
   color: #FCFCFC;
   transform: rotate(-25deg)
 }
+input[type=submit]{
+    padding-top: 1vh;
+    font-family: 'Studio Neon';
+    font-size: 3rem;
+    font-weight: lighter;
+}
 
 @media (min-width: 600px){
   .homeBackground{
