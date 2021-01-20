@@ -6,6 +6,7 @@ import './App.css';
 import Home from 'pages/home';
 import Order from 'pages/order';
 import Track from 'pages/track';
+import Settings from 'pages/settings';
 import Details from 'pages/details';
 import TotalContext from 'context/total-context';
 
@@ -32,6 +33,7 @@ function App() {
                         <Route path="/" exact component={Home} />
                         <Route path="/order" exact component={Order} />
                         <Route path="/track" exact component={Track} />
+                        <Route path="/settings" exact component={Settings} />
                         <Route path="/orderDetails" exact component={Details} />
                     </TotalContext.Provider>
                 </Switch>

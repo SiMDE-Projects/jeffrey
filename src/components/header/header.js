@@ -12,7 +12,7 @@ const Header = ({ title }) => (
         <div className="title">
             <h1>{title}</h1>
         </div>
-        <Link className="settings" to="/">
+        <Link className="settings" to="/settings">
             <Icon className="setting" name="setting" size="big" />
         </Link>
         <hr />
