@@ -4,7 +4,7 @@ import './css/item.css';
 
 const LeftItem = ({ title }) => (
     <div className="leftItem">
-        <h1>{title}</h1>
+        <h2>{title}</h2>
     </div>
 );
 

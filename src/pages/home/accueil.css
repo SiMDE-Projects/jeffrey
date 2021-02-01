@@ -76,6 +76,11 @@
   color: #FCFCFC;
   transform: rotate(-25deg)
 }
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 input[type=submit]{
     padding-top: 1vh;
     font-family: 'Studio Neon';
