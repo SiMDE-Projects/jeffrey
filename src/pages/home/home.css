@@ -87,6 +87,12 @@ input[type=submit]{
     font-size: 3rem;
     font-weight: lighter;
 }
+.loader{
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
 
 @media (min-width: 600px){
   .homeBackground{
